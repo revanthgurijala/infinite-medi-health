@@ -25,7 +25,7 @@ export default function RootLayout({
               {/* Logo Area - Fixed to Single Line */}
               <div className="flex-shrink-0 flex items-center gap-3">
                 <img
-                  src="/logo.png"
+                  src="/imh.png"
                   alt="Infinite Medi Health Logo"
                   className="h-16 w-auto object-contain"
                 />
