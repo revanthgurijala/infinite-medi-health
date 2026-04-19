@@ -5,17 +5,17 @@ export default function Home() {
       <section className="pt-24 pb-16 bg-white relative">
         <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-slate-100 to-white z-0"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Main Hero Image Container */}
-          <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] group bg-white border border-slate-100">
+          {/* Main Hero Image Container - Fixed Overlay & Borders */}
+          <div className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] group bg-white">
             <img
               src="/Home%201.jpg"
               alt="Complete Healthcare Solutions - From Diagnostics to Infrastructure"
               className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.01]"
             />
 
-            {/* Glassmorphism Floating Action Bar over the image */}
-            <div className="absolute bottom-0 left-0 w-full bg-slate-900/40 backdrop-blur-md border-t border-white/20 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="text-white drop-shadow-lg text-center md:text-left">
+            {/* Action Bar - Moved below the image to prevent hiding details */}
+            <div className="w-full bg-slate-900 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative z-20">
+              <div className="text-white text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-1 tracking-tight">
                   Build, Manage & Scale Healthcare
                 </h2>
@@ -32,7 +32,7 @@ export default function Home() {
                 </a>
                 <a
                   href="#smart-entry"
-                  className="px-8 py-4 text-center bg-white/10 text-white rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white/20 border border-white/30 transition-all backdrop-blur-sm hover:-translate-y-1"
+                  className="px-8 py-4 text-center bg-white/10 text-white rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white/20 border border-white/30 transition-all hover:-translate-y-1"
                 >
                   Explore Services
                 </a>
@@ -222,8 +222,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* The Detailed Graphic Overview */}
-          <div className="mb-16 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 relative group">
+          {/* The Detailed Graphic Overview - Fixed Borders */}
+          <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl relative group bg-white">
             <img
               src="/Home%202.jpg"
               alt="Healthcare Services Quadrants"
