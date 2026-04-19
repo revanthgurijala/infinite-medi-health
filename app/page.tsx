@@ -1,45 +1,98 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 overflow-hidden">
-      {/* 1. HERO SECTION */}
-      <section className="relative bg-[url('https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2080&auto=format&fit=crop')] bg-cover bg-center py-32 lg:py-48 border-b border-slate-200">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/80 bg-blend-multiply"></div>
+      {/* 1. NEW IMAGE-DRIVEN HERO SECTION (Using Home 1.jpg) */}
+      <section className="pt-24 pb-16 bg-white relative">
+        <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-slate-100 to-white z-0"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Main Hero Image Container */}
+          <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] group bg-white border border-slate-100">
+            <img
+              src="/Home%201.jpg"
+              alt="Complete Healthcare Solutions - From Diagnostics to Infrastructure"
+              className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.01]"
+            />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center relative z-10">
-          <span className="px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 font-bold tracking-[0.2em] uppercase mb-6 text-xs backdrop-blur-md animate-fade-in-down">
-            Build, Manage & Scale Healthcare
-          </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-2xl">
-            Complete Healthcare <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
-              Solutions.
-            </span>
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-slate-300 max-w-3xl font-medium drop-shadow-md leading-relaxed">
-            From Diagnostics to Infrastructure. We provide end-to-end
-            healthcare, compliance, and infrastructure solutions through a
-            single integrated, intelligent platform.
-          </p>
-          <div className="mt-12 flex flex-col sm:flex-row gap-6">
-            <a
-              href="#contact"
-              className="px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.5)] border border-emerald-400/50"
-            >
-              Book Consultation
-            </a>
-            <a
-              href="#smart-entry"
-              className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white/20 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"
-            >
-              Explore Services
-            </a>
+            {/* Glassmorphism Floating Action Bar over the image */}
+            <div className="absolute bottom-0 left-0 w-full bg-slate-900/40 backdrop-blur-md border-t border-white/20 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="text-white drop-shadow-lg text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-extrabold mb-1 tracking-tight">
+                  Build, Manage & Scale Healthcare
+                </h2>
+                <p className="text-sm md:text-base font-medium text-emerald-300 tracking-wide">
+                  Transforming Health ecosystems end-to-end.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                <a
+                  href="#contact"
+                  className="px-8 py-4 text-center bg-emerald-500 text-slate-900 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-emerald-400 transition-all shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:-translate-y-1"
+                >
+                  Book Consultation
+                </a>
+                <a
+                  href="#smart-entry"
+                  className="px-8 py-4 text-center bg-white/10 text-white rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white/20 border border-white/30 transition-all backdrop-blur-sm hover:-translate-y-1"
+                >
+                  Explore Services
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Exact Text Extraction from Home 1.jpg for SEO and Content Completeness */}
+          <div className="mt-12 text-center">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+              Complete Healthcare Solutions
+            </h1>
+            <p className="text-xl text-slate-600 mb-8 font-medium">
+              From Diagnostics to Infrastructure
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 text-sm md:text-base font-bold text-emerald-600">
+              <span className="flex items-center gap-2">
+                <span className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                  ✓
+                </span>{" "}
+                Precision Diagnostics
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                  ✓
+                </span>{" "}
+                Functional Insights
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                  ✓
+                </span>{" "}
+                Preventive Outcomes
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                "Advanced Diagnostics",
+                "Corporate Health",
+                "Lab Setup Consulting",
+                "Compliance & Reports",
+              ].map((label) => (
+                <div
+                  key={label}
+                  className="bg-slate-50 py-5 px-4 rounded-2xl shadow-sm text-center border border-slate-100 font-extrabold text-blue-950 text-sm uppercase tracking-wider hover:bg-emerald-50 transition-colors cursor-default"
+                >
+                  {label}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* 2. SMART ENTRY SECTION */}
-      <section id="smart-entry" className="py-24 bg-white relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-32 bg-emerald-500/10 blur-[100px] pointer-events-none"></div>
+      <section
+        id="smart-entry"
+        className="py-24 bg-slate-50 relative border-t border-slate-200"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -74,7 +127,7 @@ export default function Home() {
               <a
                 href="#contact"
                 key={idx}
-                className="group bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:-translate-y-2 hover:bg-white transition-all duration-500 hover:shadow-[0_10px_40px_-10px_rgba(16,185,129,0.3)] hover:border-emerald-200 text-center cursor-pointer block relative overflow-hidden"
+                className="group bg-white p-8 rounded-2xl border border-slate-100 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_10px_40px_-10px_rgba(16,185,129,0.3)] hover:border-emerald-200 text-center cursor-pointer block relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="text-5xl mb-6 transform group-hover:scale-125 group-hover:-rotate-3 transition-transform duration-500 relative z-10">
@@ -152,10 +205,143 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. PROOF SECTION & 4.5. ADVANCED REPORT DASHBOARD */}
+      {/* 4. NEW IMAGE-DRIVEN SERVICES SECTION (Using Home 2.jpg) */}
+      <section
+        id="services"
+        className="py-24 bg-white border-b border-slate-200"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight">
+              Our Core Medical Services
+            </h2>
+            <div className="w-16 h-1.5 bg-emerald-500 mx-auto mt-6 mb-8 rounded-full"></div>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Comprehensive solutions ensuring quality standards, regulatory
+              compliance, and operational excellence.
+            </p>
+          </div>
+
+          {/* The Detailed Graphic Overview */}
+          <div className="mb-16 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 relative group">
+            <img
+              src="/Home%202.jpg"
+              alt="Healthcare Services Quadrants"
+              className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.02]"
+            />
+            <div className="absolute inset-0 bg-blue-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          </div>
+
+          {/* Meticulous Text Extraction from Home 2.jpg to Ensure Nothing is Missed */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Quadrant 1 */}
+            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                1
+              </div>
+              <h3 className="text-2xl font-extrabold text-blue-950 mb-6">
+                Preventive & Monitoring Health Packages
+              </h3>
+              <div className="space-y-4">
+                <p className="flex items-center gap-3 text-slate-700 font-bold">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
+                    ✓
+                  </span>{" "}
+                  Precision Diagnostics
+                </p>
+                <p className="flex items-center gap-3 text-slate-700 font-bold">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
+                    ✓
+                  </span>{" "}
+                  Functional insights
+                </p>
+                <p className="flex items-center gap-3 text-slate-700 font-bold">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
+                    ✓
+                  </span>{" "}
+                  Preventive Outcomes
+                </p>
+              </div>
+            </div>
+
+            {/* Quadrant 2 */}
+            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                2
+              </div>
+              <h3 className="text-2xl font-extrabold text-blue-950 mb-4">
+                Lab Setup & Consulting Services
+              </h3>
+              <p className="text-slate-600 mb-6 font-medium leading-relaxed">
+                Complete support for establishing and upgrading diagnostic labs
+                from planning to NABL compliance.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
+                  Equipment Selection
+                </span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
+                  Lab Design & Equipment
+                </span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
+                  NABL Compliance
+                </span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
+                  Business strategy
+                </span>
+              </div>
+            </div>
+
+            {/* Quadrant 3 */}
+            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                3
+              </div>
+              <h3 className="text-2xl font-extrabold text-blue-950 mb-4">
+                Occupational Healthcare Services
+              </h3>
+              <p className="text-slate-600 mb-6 font-medium leading-relaxed">
+                Workplace health checkups, screenings, and wellness programs to
+                ensure a healthy workforce.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
+                  🏥 Advanced Diagnostics
+                </span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
+                  🛡️ NABL Compliance
+                </span>
+              </div>
+            </div>
+
+            {/* Quadrant 4 */}
+            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                4
+              </div>
+              <h3 className="text-2xl font-extrabold text-blue-950 mb-4">
+                Compliance & Accreditation Support
+              </h3>
+              <p className="text-slate-600 mb-6 font-medium leading-relaxed">
+                Expert assistance with NABH, NABL, ISO certifications and
+                regulatory compliance.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
+                  ⚡ Workforce Health Cp
+                </span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
+                  🔥 Fire Safety Systems
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. PROOF SECTION & ADVANCED REPORT DASHBOARD */}
       <section className="py-24 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Top Metrics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-200 mb-20">
             {[
               { num: "1,000+", label: "Health Screenings" },
@@ -174,12 +360,11 @@ export default function Home() {
             ))}
           </div>
 
-          {/* NEW: ADVANCED LIVE DASHBOARD GRAPHIC */}
+          {/* ADVANCED LIVE DASHBOARD GRAPHIC */}
           <div className="bg-slate-900 rounded-3xl p-1 shadow-2xl relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
 
             <div className="bg-slate-900 rounded-[23px] p-8 md:p-12 relative z-10 border border-slate-700/50">
-              {/* Dashboard Header */}
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 border-b border-slate-800 pb-8">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
@@ -219,9 +404,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Interactive Graph Data Area */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                {/* Left Side: Risk Distribution Bars */}
                 <div>
                   <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
                     <span className="text-emerald-500">📊</span> Risk
@@ -267,7 +450,6 @@ export default function Home() {
                     ))}
                   </div>
 
-                  {/* Lifestyle Risks Mini-Tags */}
                   <div className="mt-10">
                     <p className="text-slate-400 text-xs uppercase tracking-widest font-bold mb-4">
                       Top Lifestyle Risks Detected
@@ -289,7 +471,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Right Side: Clinical Insights Grid */}
                 <div>
                   <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
                     <span className="text-cyan-500">🔬</span> Key Health
@@ -361,7 +542,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. OUR PROCESS */}
+      {/* 6. OUR PROCESS */}
       <section id="process" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-20">
@@ -415,7 +596,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. DIAGNOSTIC KART */}
+      {/* 7. DIAGNOSTIC KART */}
       <section
         id="diagnostic-kart"
         className="py-32 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center relative bg-fixed"
@@ -458,7 +639,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. FINAL CTA & CONTACT FORM */}
+      {/* 8. FINAL CTA & CONTACT FORM */}
       <section id="contact" className="py-24 bg-white relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
