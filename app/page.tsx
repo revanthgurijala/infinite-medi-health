@@ -1,234 +1,266 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* 1. HERO SECTION (With your Gray 75% Overlay & Button Animations) */}
-      <section className="relative bg-[url('https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center py-32 border-b border-gray-200 bg-gray-900/75 bg-blend-overlay">
+      {/* 1. HERO SECTION */}
+      <section className="relative bg-[url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop')] bg-cover bg-center py-32 border-b border-gray-200 bg-blue-950/80 bg-blend-overlay">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center relative z-10">
-          <span className="text-gray-300 font-bold tracking-widest uppercase mb-4 text-sm tracking-[0.2em]">
-            Welcome to Infinite Medi Health
+          <span className="text-emerald-400 font-bold tracking-widest uppercase mb-4 text-sm tracking-[0.2em]">
+            Build, Manage & Scale Healthcare
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-lg">
-            Infinite Care. <br />
-            <span className="text-blue-400">Intelligent Healthcare.</span>
+            Complete Healthcare <br />
+            <span className="text-emerald-400">Solutions.</span>
           </h1>
           <p className="mt-2 text-xl md:text-2xl text-gray-200 max-w-3xl font-medium drop-shadow-md">
-            Precision Diagnostics. Functional Insights. Preventive Outcomes.
+            From Diagnostics to Infrastructure. We provide end-to-end
+            healthcare, compliance, and infrastructure solutions through a
+            single integrated platform.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-6">
             <a
-              href="#services"
-              className="px-8 py-4 bg-blue-600 text-white rounded-md font-bold text-sm uppercase tracking-wider hover:bg-blue-500 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300"
+              href="#contact"
+              className="px-8 py-4 bg-emerald-600 text-white rounded-md font-bold text-sm uppercase tracking-wider hover:bg-emerald-500 hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl"
             >
-              Explore Medical Services
+              Book Consultation
             </a>
             <a
-              href="#fitness"
-              className="px-8 py-4 bg-white text-gray-900 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-gray-100 hover:scale-105 active:scale-95 hover:shadow-xl transition-all duration-300"
+              href="#smart-entry"
+              className="px-8 py-4 bg-white text-blue-950 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"
             >
-              View Fitness Profiles
+              Explore Services
             </a>
           </div>
         </div>
       </section>
 
-      {/* 2. ABOUT SECTION */}
-      <section id="about" className="py-20 bg-white">
+      {/* 2. SMART ENTRY SECTION (User Segmentation) */}
+      <section id="smart-entry" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Bridging the gap between advanced technology and everyday
-                healthcare.
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Infinite Medi Health delivers next-generation healthcare
-                solutions combining advanced diagnostics, preventive care, and
-                technology-driven health programs to improve patient outcomes
-                and support healthcare providers.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Better correlation between symptoms and biomarkers",
-                  "Early identification of subclinical imbalances",
-                  "Improved treatment personalization",
-                  "Reduced trial-and-error in therapies",
-                ].map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-center text-gray-700 font-medium hover:translate-x-2 transition-transform duration-300"
-                  >
-                    <svg
-                      className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-blue-950">
+              What are you looking for today?
+            </h2>
+            <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 mb-4 rounded-full"></div>
+          </div>
 
-            {/* Professional Image Side with Hover Zoom */}
-            <div className="mt-10 lg:mt-0 relative rounded-2xl overflow-hidden shadow-2xl h-96 group">
-              <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
-                alt="Advanced Laboratory"
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
-              />
-              <div className="absolute inset-0 bg-gray-900/30 group-hover:bg-gray-900/10 transition-colors duration-500"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-gray-900 to-transparent">
-                <p className="text-xl font-bold text-white italic drop-shadow-md">
-                  "Diagnostics designed to support decisions, not just deliver
-                  results."
-                </p>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Improve Employee Health",
+                desc: "Corporate wellness & screenings",
+                icon: "🏢",
+              },
+              {
+                title: "Start a Diagnostic Lab",
+                desc: "End-to-end setup & compliance",
+                icon: "🔬",
+              },
+              {
+                title: "Setup a Hospital",
+                desc: "Infrastructure & planning",
+                icon: "🏥",
+              },
+              {
+                title: "Book Health Tests",
+                desc: "Advanced diagnostics & panels",
+                icon: "🩸",
+              },
+            ].map((item, idx) => (
+              <a
+                href="#contact"
+                key={idx}
+                className="group bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-2 hover:shadow-xl hover:border-emerald-200 transition-all duration-300 text-center cursor-pointer block"
+              >
+                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold text-blue-950 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. HIGH-TICKET OFFER (Game Changer Section) */}
+      <section
+        id="high-ticket"
+        className="py-20 bg-blue-900 text-white relative overflow-hidden"
+      >
+        <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-blue-800 rounded-full opacity-50 blur-3xl"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between">
+          <div className="md:w-2/3 mb-10 md:mb-0">
+            <span className="text-emerald-400 font-bold uppercase tracking-widest text-sm block mb-2">
+              Turnkey Healthcare Projects
+            </span>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+              Start Your Lab or Hospital in 30–90 Days.
+            </h2>
+            <p className="text-xl text-blue-200 mb-6">
+              "You Dream It, We Build It." We handle the Project Report, Setup,
+              Equipment, Compliance (NABL/NABH), and Operations.
+            </p>
+            <ul className="flex flex-wrap gap-4 text-sm font-semibold">
+              <li className="bg-blue-800 px-4 py-2 rounded-full">
+                ✅ Feasibility Reports
+              </li>
+              <li className="bg-blue-800 px-4 py-2 rounded-full">
+                ✅ Architecture & Interiors
+              </li>
+              <li className="bg-blue-800 px-4 py-2 rounded-full">
+                ✅ NABL/NABH Approvals
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              href="#contact"
+              className="px-8 py-5 bg-emerald-500 text-blue-950 rounded-md font-extrabold text-lg uppercase tracking-wide hover:bg-emerald-400 hover:scale-105 transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)] block text-center"
+            >
+              Get Detailed Plan
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. PROOF / IMPACT SECTION (Corporate Health Stats) */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <p className="text-4xl font-extrabold text-blue-950 mb-2">
+                1,000+
+              </p>
+              <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">
+                Health Screenings
+              </p>
+            </div>
+            <div>
+              <p className="text-4xl font-extrabold text-blue-950 mb-2">50+</p>
+              <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">
+                Corporate Health Camps
+              </p>
+            </div>
+            <div>
+              <p className="text-4xl font-extrabold text-blue-950 mb-2">30+</p>
+              <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">
+                Labs & Hospitals Setup
+              </p>
+            </div>
+            <div>
+              <p className="text-4xl font-extrabold text-blue-950 mb-2">100%</p>
+              <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">
+                Compliance Success
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. CORE MEDICAL SERVICES (With Float & Shadow Animations) */}
-      <section
-        id="services"
-        className="py-20 bg-gray-50 border-t border-gray-200"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-900">
-              Our Core Medical Services
-            </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-4 rounded-full"></div>
-            <p className="text-xl text-gray-600">
-              Comprehensive solutions for hospitals, corporates, and
-              communities.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* 5. OUR PROCESS */}
+      <section id="process" className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-extrabold text-blue-950 mb-16">
+            Our End-to-End Process
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+            <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-blue-100 -translate-y-1/2 z-0"></div>
+
             {[
               {
-                title: "Preventive & Monitoring",
-                desc: "Comprehensive health screening solutions designed for early detection and wellness management.",
+                step: "01",
+                title: "Consultation",
+                desc: "We deeply understand your health or business setup needs.",
               },
               {
-                title: "Advanced Diagnostics",
-                desc: "Cutting-edge LC-MS/MS testing and advanced biomarker analysis for personalized healthcare.",
+                step: "02",
+                title: "Custom Plan",
+                desc: "We design a tailored, data-driven solution and project timeline.",
               },
               {
-                title: "Occupational Healthcare",
-                desc: "Workplace health solutions, pre-employment checkups, and industrial health assessments.",
+                step: "03",
+                title: "Execution",
+                desc: "Our expert team implements the solution end-to-end.",
               },
               {
-                title: "Laboratory Setup",
-                desc: "End-to-end support for establishing diagnostic facilities, equipment procurement, and NABL compliance.",
+                step: "04",
+                title: "Support",
+                desc: "Continuous tracking, compliance monitoring, and improvement.",
               },
-              {
-                title: "Hospital Planning",
-                desc: "Strategic and operational support for healthcare infrastructure and construction management.",
-              },
-              {
-                title: "Accreditation Support",
-                desc: "Complete support for NABH, NABL, and ISO certifications with faster approval timelines.",
-              },
-            ].map((service, idx) => (
+            ].map((item, idx) => (
               <div
                 key={idx}
-                className="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-200 transition-all duration-300 ease-out cursor-default"
+                className="relative z-10 flex flex-col items-center group"
               >
-                <div className="h-14 w-14 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-2xl font-bold group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                  {idx + 1}
+                <div className="w-20 h-20 bg-white border-4 border-emerald-500 rounded-full flex items-center justify-center text-2xl font-extrabold text-blue-950 mb-6 shadow-lg group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">
+                  {item.step}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {service.title}
+                <h3 className="text-xl font-bold text-blue-950 mb-2">
+                  {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                  {service.desc}
-                </p>
+                <p className="text-gray-600 text-sm px-4">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 4. FITNESS & GYM PROFILES (With Neon Glow Animations) */}
+      {/* 6. DIAGNOSTIC KART (Coming Soon) */}
       <section
-        id="fitness"
-        className="relative py-24 bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-gray-900/95 bg-blend-overlay text-white border-t border-gray-800 border-b"
+        id="diagnostic-kart"
+        className="py-24 bg-gray-900 text-white relative"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
-            <div className="lg:col-span-5 mb-12 lg:mb-0">
-              <span className="text-emerald-400 font-bold tracking-widest uppercase mb-4 block text-sm">
-                Fitness Diagnostic Programs
-              </span>
-              <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-                Train Smart. <br />
-                Test Smart. <br />
-                <span className="text-emerald-400">Perform Better.</span>
-              </h2>
-              <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                Fitness is not just about workouts or diet—it is driven by your
-                internal health. Hidden factors like nutrient deficiencies,
-                hormonal imbalance, and inflammation can slow your progress.
-              </p>
-              <a
-                href="tel:+917386514350"
-                className="inline-block px-8 py-4 bg-emerald-500 text-gray-900 rounded-md font-bold text-sm uppercase tracking-wide hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.3)]"
-              >
-                Book a Fitness Test
-              </a>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="bg-emerald-500/20 text-emerald-400 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block border border-emerald-500/50">
+            Coming Soon
+          </span>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+            Diagnostic Kart
+          </h2>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+            A smart digital platform designed to simplify diagnostics. Book
+            tests online, compare prices, schedule home sample collection, and
+            access digital reports instantly.
+          </p>
+          <div className="flex justify-center gap-6">
+            <div className="bg-gray-800 p-6 rounded-lg text-center w-40">
+              <span className="block text-3xl mb-2">📱</span>
+              <span className="text-sm font-bold">Book Online</span>
             </div>
-
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[
-                "Basic Fitness Panel",
-                "Muscle Performance Profile",
-                "Cardio Fitness Panel",
-                "Metabolic & Fat Loss Profile",
-                "Vitamin & Nutritional Profile",
-                "Advanced Hormone Profile",
-                "Complete 360° Profile",
-                "Advanced Cardiac Fitness Profile",
-              ].map((panel, idx) => (
-                <div
-                  key={idx}
-                  className="bg-gray-800/60 backdrop-blur-md p-6 rounded-lg border border-gray-700 hover:-translate-y-1 hover:border-emerald-400 hover:bg-gray-800 hover:shadow-[0_0_20px_rgba(16,185,129,0.15)] transition-all duration-300 cursor-pointer"
-                >
-                  <h3 className="font-bold text-lg text-emerald-50 mb-2">
-                    {panel}
-                  </h3>
-                  <p className="text-sm text-gray-400">
-                    Scientific health monitoring for performance.
-                  </p>
-                </div>
-              ))}
+            <div className="bg-gray-800 p-6 rounded-lg text-center w-40">
+              <span className="block text-3xl mb-2">🏠</span>
+              <span className="text-sm font-bold">Home Collect</span>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg text-center w-40">
+              <span className="block text-3xl mb-2">📊</span>
+              <span className="text-sm font-bold">Digital Reports</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. CONTACT FORM SECTION */}
+      {/* 7. FINAL CTA & CONTACT FORM */}
       <section id="contact" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-gray-900">
-              Get In Touch
+            <h2 className="text-4xl font-extrabold text-blue-950">
+              Ready to Start Your Project?
             </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-4 rounded-full"></div>
+            <div className="w-24 h-1 bg-emerald-500 mx-auto mt-4 mb-4 rounded-full"></div>
             <p className="text-gray-600">
-              Have a question or want to partner with us? Fill out the form
-              below.
+              Book a consultation, schedule a health camp, or get a project
+              report.
             </p>
           </div>
 
-          <form className="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+          <form
+            action="YOUR_FORMSPREE_LINK_HERE"
+            method="POST"
+            className="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -236,7 +268,9 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-emerald-500 outline-none"
                   placeholder="John Doe"
                 />
               </div>
@@ -246,7 +280,9 @@ export default function Home() {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-emerald-500 outline-none"
                   placeholder="john@example.com"
                 />
               </div>
@@ -256,19 +292,25 @@ export default function Home() {
                 </label>
                 <input
                   type="tel"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  name="phone"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-emerald-500 outline-none"
                   placeholder="+91 XXXX XXXXX"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
+                  Service Required
                 </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="Partnership Inquiry"
-                />
+                <select
+                  name="service"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-emerald-500 outline-none bg-white"
+                >
+                  <option>Corporate Health Camp</option>
+                  <option>Start a Diagnostic Lab</option>
+                  <option>Hospital Setup / Compliance</option>
+                  <option>Book Health Tests</option>
+                  <option>Other</option>
+                </select>
               </div>
             </div>
             <div className="mb-6">
@@ -276,16 +318,18 @@ export default function Home() {
                 Your Message
               </label>
               <textarea
+                name="message"
+                required
                 rows={4}
-                className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
-                placeholder="How can we help you?"
+                className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-emerald-500 outline-none resize-none"
+                placeholder="Tell us about your requirements..."
               ></textarea>
             </div>
             <button
-              type="button"
-              className="w-full bg-blue-600 text-white font-bold py-4 rounded-md hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl active:translate-y-0 transition-all duration-300 text-lg uppercase tracking-wide"
+              type="submit"
+              className="w-full bg-blue-900 text-white font-bold py-4 rounded-md hover:bg-blue-800 transition-all duration-300 text-lg uppercase tracking-wide shadow-lg hover:-translate-y-1"
             >
-              Send Message
+              Submit Inquiry
             </button>
           </form>
         </div>
