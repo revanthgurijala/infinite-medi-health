@@ -4,17 +4,18 @@ export default function Home() {
       {/* 1. NEW IMAGE-DRIVEN HERO SECTION (Using Home 1.jpg) */}
       <section className="pt-24 pb-16 bg-white relative">
         <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-slate-100 to-white z-0"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Main Hero Image Container - Fixed Overlay & Borders */}
-          <div className="flex flex-col rounded-2xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] group bg-white">
-            <img
-              src="/Home%201.jpg"
-              alt="Complete Healthcare Solutions - From Diagnostics to Infrastructure"
-              className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.01]"
-            />
 
-            {/* Action Bar - Moved below the image to prevent hiding details */}
-            <div className="w-full bg-slate-900 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative z-20">
+        {/* Full-Width Hero Image Container (Removed card box & margins) */}
+        <div className="relative z-10 w-full flex flex-col group">
+          <img
+            src="/Home%201.jpg"
+            alt="Complete Healthcare Solutions - From Diagnostics to Infrastructure"
+            className="w-full h-auto object-cover"
+          />
+
+          {/* Action Bar - Full width background, but inner content stays aligned */}
+          <div className="w-full bg-slate-900 flex justify-center border-b border-slate-800">
+            <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-white text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-1 tracking-tight">
                   Build, Manage & Scale Healthcare
@@ -39,8 +40,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Exact Text Extraction from Home 1.jpg for SEO and Content Completeness */}
+        {/* Text Extracted Content Container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mt-12 text-center">
             <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
               Complete Healthcare Solutions
@@ -208,10 +211,11 @@ export default function Home() {
       {/* 4. NEW IMAGE-DRIVEN SERVICES SECTION (Using Home 2.jpg) */}
       <section
         id="services"
-        className="py-24 bg-white border-b border-slate-200"
+        className="py-24 bg-white border-b border-slate-200 flex flex-col items-center"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        {/* Title block kept centered and constrained */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center mb-10">
             <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight">
               Our Core Medical Services
             </h2>
@@ -221,18 +225,19 @@ export default function Home() {
               compliance, and operational excellence.
             </p>
           </div>
+        </div>
 
-          {/* The Detailed Graphic Overview - Fixed Borders */}
-          <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl relative group bg-white">
-            <img
-              src="/Home%202.jpg"
-              alt="Healthcare Services Quadrants"
-              className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.02]"
-            />
-            <div className="absolute inset-0 bg-blue-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-          </div>
+        {/* Full-Width Image Block (Removed padding, shadows, and card styling) */}
+        <div className="w-full relative group mb-16">
+          <img
+            src="/Home%202.jpg"
+            alt="Healthcare Services Quadrants"
+            className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.01]"
+          />
+        </div>
 
-          {/* Meticulous Text Extraction from Home 2.jpg to Ensure Nothing is Missed */}
+        {/* Grid Container resumes max-width layout */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Quadrant 1 */}
             <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
