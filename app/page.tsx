@@ -1,39 +1,39 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 overflow-hidden">
-      {/* 1. NEW IMAGE-DRIVEN HERO SECTION (Using Home 1.jpg) */}
-      <section className="pt-24 pb-16 bg-white relative">
+    <main className="min-h-screen bg-slate-50 overflow-x-hidden w-full">
+      {/* 1. HOME (Text -> Full Edge Image -> Buttons) */}
+      <section className="pt-20 pb-12 bg-white relative">
         <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-slate-100 to-white z-0"></div>
 
-        {/* Full-Width Hero Image Container (Removed card box & margins) */}
+        {/* Full-Width Hero Image Container */}
         <div className="relative z-10 w-full flex flex-col group">
           <img
             src="/Home%201.jpg"
             alt="Complete Healthcare Solutions - From Diagnostics to Infrastructure"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto max-h-[70vh] object-cover"
           />
 
-          {/* Action Bar - Full width background, but inner content stays aligned */}
+          {/* Action Bar */}
           <div className="w-full bg-slate-900 flex justify-center border-b border-slate-800">
-            <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="w-full max-w-[1440px] px-6 sm:px-8 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-white text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-1 tracking-tight">
+                <h2 className="text-2xl md:text-3xl font-bold mb-2 tracking-tight">
                   Build, Manage & Scale Healthcare
                 </h2>
-                <p className="text-sm md:text-base font-medium text-emerald-300 tracking-wide">
+                <p className="text-sm md:text-base font-medium text-emerald-400 tracking-wide">
                   Transforming Health ecosystems end-to-end.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
                 <a
                   href="#contact"
-                  className="px-8 py-4 text-center bg-emerald-500 text-slate-900 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-emerald-400 transition-all shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:-translate-y-1"
+                  className="px-8 py-3.5 text-center bg-emerald-500 text-slate-900 rounded-full font-semibold text-sm uppercase tracking-widest hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:-translate-y-0.5"
                 >
                   Book Consultation
                 </a>
                 <a
                   href="#smart-entry"
-                  className="px-8 py-4 text-center bg-white/10 text-white rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white/20 border border-white/30 transition-all hover:-translate-y-1"
+                  className="px-8 py-3.5 text-center bg-white/5 text-white rounded-full font-semibold text-sm uppercase tracking-widest hover:bg-white/10 border border-white/20 transition-all hover:-translate-y-0.5"
                 >
                   Explore Services
                 </a>
@@ -41,313 +41,256 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Text Extracted Content Container */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="mt-12 text-center">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
-              Complete Healthcare Solutions
-            </h1>
-            <p className="text-xl text-slate-600 mb-8 font-medium">
-              From Diagnostics to Infrastructure
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10 text-sm md:text-base font-bold text-emerald-600">
-              <span className="flex items-center gap-2">
-                <span className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
-                  ✓
-                </span>{" "}
-                Precision Diagnostics
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
-                  ✓
-                </span>{" "}
-                Functional Insights
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
-                  ✓
-                </span>{" "}
-                Preventive Outcomes
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                "Advanced Diagnostics",
-                "Corporate Health",
-                "Lab Setup Consulting",
-                "Compliance & Reports",
-              ].map((label) => (
-                <div
-                  key={label}
-                  className="bg-slate-50 py-5 px-4 rounded-2xl shadow-sm text-center border border-slate-100 font-extrabold text-blue-950 text-sm uppercase tracking-wider hover:bg-emerald-50 transition-colors cursor-default"
-                >
-                  {label}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
 
-      {/* 2. SMART ENTRY SECTION */}
-      <section
-        id="smart-entry"
-        className="py-24 bg-slate-50 relative border-t border-slate-200"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-              What are you looking for today?
-            </h2>
-            <div className="w-16 h-1.5 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-6 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* 2. QUICK HIGHLIGHTS */}
+      <section className="py-10 md:py-12 bg-slate-50 w-full border-t border-slate-200">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              {
-                title: "Improve Employee Health",
-                desc: "Corporate wellness & screenings",
-                icon: "🏢",
-              },
-              {
-                title: "Start a Diagnostic Lab",
-                desc: "End-to-end setup & compliance",
-                icon: "🔬",
-              },
-              {
-                title: "Setup a Hospital",
-                desc: "Infrastructure & planning",
-                icon: "🏥",
-              },
-              {
-                title: "Book Health Tests",
-                desc: "Advanced diagnostics & panels",
-                icon: "🩸",
-              },
-            ].map((item, idx) => (
-              <a
-                href="#contact"
-                key={idx}
-                className="group bg-white p-8 rounded-2xl border border-slate-100 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_10px_40px_-10px_rgba(16,185,129,0.3)] hover:border-emerald-200 text-center cursor-pointer block relative overflow-hidden"
+              "All-in-One Healthcare Platform",
+              "Corporate & Diagnostic Expertise",
+              "End-to-End Project Support",
+              "Technology-Driven Solutions",
+            ].map((highlight, i) => (
+              <div
+                key={i}
+                className="bg-white border-t-4 border-t-emerald-500 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center gap-4 relative overflow-hidden group"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="text-5xl mb-6 transform group-hover:scale-125 group-hover:-rotate-3 transition-transform duration-500 relative z-10">
-                  {item.icon}
+                <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center text-xl md:text-2xl font-bold relative z-10 group-hover:scale-110 transition-transform">
+                  ✓
                 </div>
-                <h3 className="text-lg font-extrabold text-slate-900 mb-2 relative z-10">
-                  {item.title}
-                </h3>
-                <p className="text-slate-500 text-sm relative z-10">
-                  {item.desc}
-                </p>
-              </a>
+                <span className="text-base font-semibold text-slate-800 relative z-10 leading-snug">
+                  {highlight}
+                </span>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 3. HIGH-TICKET OFFER */}
-      <section
-        id="high-ticket"
-        className="py-24 bg-slate-900 text-white relative overflow-hidden"
-      >
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-[120px] animate-pulse"></div>
-        <div
-          className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="lg:w-2/3">
-            <div className="flex items-center gap-4 mb-6">
-              <span className="h-px w-12 bg-emerald-500"></span>
-              <span className="text-emerald-400 font-bold uppercase tracking-widest text-xs">
-                Turnkey Healthcare Projects
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
-              Start Your Lab or Hospital in{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
-                30–90 Days.
-              </span>
+      {/* 3. ABOUT SNAPSHOT */}
+      <section className="py-12 md:py-16 bg-white w-full">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="bg-gradient-to-r from-slate-900 to-blue-950 rounded-3xl p-10 md:p-14 text-center shadow-2xl relative overflow-hidden w-full">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px]"></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 relative z-10">
+              About Snapshot
             </h2>
-            <p className="text-xl text-slate-300 mb-10 font-light border-l-4 border-emerald-500 pl-6 italic">
-              "You Dream It, We Build It." We handle the Project Report, Setup,
-              Equipment, Compliance (NABL/NABH), and Operations.
+            <p className="text-lg md:text-xl text-slate-300/90 max-w-6xl mx-auto mb-10 relative z-10 leading-relaxed font-light">
+              <span className="text-emerald-400 font-semibold">
+                Infinite Medi Health
+              </span>{" "}
+              is a next-generation healthcare solutions company integrating
+              diagnostics, preventive care, and technology to deliver better
+              outcomes and long-term wellness.
             </p>
-            <ul className="flex flex-wrap gap-4 text-sm font-semibold">
-              {[
-                "Feasibility Reports",
-                "Architecture & Interiors",
-                "NABL/NABH Approvals",
-              ].map((tag, i) => (
-                <li
-                  key={i}
-                  className="bg-slate-800/80 backdrop-blur-sm border border-slate-700 px-5 py-2.5 rounded-full flex items-center gap-2 hover:border-emerald-500/50 transition-colors"
-                >
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>{" "}
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="lg:w-1/3 w-full flex justify-center lg:justify-end">
             <a
-              href="#contact"
-              className="w-full sm:w-auto px-10 py-6 bg-emerald-500 text-slate-900 rounded-2xl font-extrabold text-lg uppercase tracking-widest hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.3)] text-center relative group overflow-hidden"
+              href="#who-we-are"
+              className="inline-block px-10 py-4 bg-emerald-500 text-slate-900 rounded-full font-semibold text-sm uppercase tracking-widest hover:bg-emerald-400 transition-all relative z-10 shadow-[0_0_20px_rgba(16,185,129,0.2)]"
             >
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
-              <span className="relative z-10 flex items-center justify-center gap-2">
-                Get Detailed Plan{" "}
-                <span className="text-2xl leading-none">&rarr;</span>
-              </span>
+              Learn More
             </a>
           </div>
         </div>
       </section>
 
-      {/* 4. NEW IMAGE-DRIVEN SERVICES SECTION (Using Home 2.jpg) */}
+      {/* 4. WHO WE ARE */}
       <section
-        id="services"
-        className="py-24 bg-white border-b border-slate-200 flex flex-col items-center"
+        id="who-we-are"
+        className="py-16 md:py-20 bg-slate-50 w-full border-b border-slate-200"
       >
-        {/* Title block kept centered and constrained */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight">
-              Our Core Medical Services
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
+              Who We Are
             </h2>
-            <div className="w-16 h-1.5 bg-emerald-500 mx-auto mt-6 mb-8 rounded-full"></div>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Comprehensive solutions ensuring quality standards, regulatory
-              compliance, and operational excellence.
+            <div className="w-16 h-1 bg-emerald-500 mx-auto mt-6 mb-6 rounded-full"></div>
+            <p className="text-lg md:text-xl text-slate-600 max-w-6xl mx-auto leading-relaxed font-normal">
+              Infinite Medi Health is a forward-thinking healthcare solutions
+              company committed to transforming how individuals and
+              organizations access healthcare. <br />
+              <br />
+              We combine{" "}
+              <span className="font-semibold text-slate-900">
+                advanced diagnostics, preventive healthcare, and
+                technology-driven programs
+              </span>{" "}
+              into one seamless ecosystem—ensuring early detection, better
+              outcomes, and long-term wellness.
             </p>
           </div>
-        </div>
 
-        {/* Full-Width Image Block (Removed padding, shadows, and card styling) */}
-        <div className="w-full relative group mb-16">
-          <img
-            src="/Home%202.jpg"
-            alt="Healthcare Services Quadrants"
-            className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-[1.01]"
-          />
-        </div>
-
-        {/* Grid Container resumes max-width layout */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Quadrant 1 */}
-            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                1
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 group">
+              <div className="text-emerald-500 text-4xl md:text-5xl mb-6 group-hover:scale-110 transition-transform origin-left">
+                👁️
               </div>
-              <h3 className="text-2xl font-extrabold text-blue-950 mb-6">
-                Preventive & Monitoring Health Packages
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Our Vision
               </h3>
-              <div className="space-y-4">
-                <p className="flex items-center gap-3 text-slate-700 font-bold">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
-                    ✓
-                  </span>{" "}
-                  Precision Diagnostics
-                </p>
-                <p className="flex items-center gap-3 text-slate-700 font-bold">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
-                    ✓
-                  </span>{" "}
-                  Functional insights
-                </p>
-                <p className="flex items-center gap-3 text-slate-700 font-bold">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
-                    ✓
-                  </span>{" "}
-                  Preventive Outcomes
-                </p>
-              </div>
-            </div>
-
-            {/* Quadrant 2 */}
-            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                2
-              </div>
-              <h3 className="text-2xl font-extrabold text-blue-950 mb-4">
-                Lab Setup & Consulting Services
-              </h3>
-              <p className="text-slate-600 mb-6 font-medium leading-relaxed">
-                Complete support for establishing and upgrading diagnostic labs
-                from planning to NABL compliance.
+              <p className="text-slate-600 text-base leading-relaxed font-normal">
+                To create a future where healthcare is predictive, preventive,
+                and personalized, accessible through a single intelligent
+                platform.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
-                  Equipment Selection
-                </span>
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
-                  Lab Design & Equipment
-                </span>
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
-                  NABL Compliance
-                </span>
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-slate-700 shadow-sm">
-                  Business strategy
-                </span>
-              </div>
             </div>
-
-            {/* Quadrant 3 */}
-            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                3
+            <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 group">
+              <div className="text-emerald-500 text-4xl md:text-5xl mb-6 group-hover:scale-110 transition-transform origin-left">
+                🎯
               </div>
-              <h3 className="text-2xl font-extrabold text-blue-950 mb-4">
-                Occupational Healthcare Services
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Our Mission
               </h3>
-              <p className="text-slate-600 mb-6 font-medium leading-relaxed">
-                Workplace health checkups, screenings, and wellness programs to
-                ensure a healthy workforce.
+              <p className="text-slate-600 text-base leading-relaxed font-normal">
+                To empower individuals and organizations with data-driven
+                healthcare solutions that enable early intervention and a better
+                quality of life.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
-                  🏥 Advanced Diagnostics
-                </span>
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
-                  🛡️ NABL Compliance
-                </span>
-              </div>
             </div>
-
-            {/* Quadrant 4 */}
-            <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                4
+            <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 group">
+              <div className="text-emerald-500 text-4xl md:text-5xl mb-6 group-hover:scale-110 transition-transform origin-left">
+                🤝
               </div>
-              <h3 className="text-2xl font-extrabold text-blue-950 mb-4">
-                Compliance & Accreditation Support
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Our Commitment
               </h3>
-              <p className="text-slate-600 mb-6 font-medium leading-relaxed">
-                Expert assistance with NABH, NABL, ISO certifications and
-                regulatory compliance.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
-                  ⚡ Workforce Health Cp
-                </span>
-                <span className="bg-white border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold text-blue-900 shadow-sm flex items-center gap-2">
-                  🔥 Fire Safety Systems
-                </span>
-              </div>
+              <ul className="text-slate-600 text-base space-y-3 font-medium">
+                <li className="flex items-center gap-2">
+                  <span className="text-emerald-500">✔</span> Trusted &
+                  transparent healthcare
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-emerald-500">✔</span> Early diagnosis &
+                  prevention
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-emerald-500">✔</span> Healthier
+                  communities & workplaces
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-emerald-500">✔</span> Continuous
+                  innovation
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. PROOF SECTION & ADVANCED REPORT DASHBOARD */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-200 mb-20">
+      {/* 5. SERVICES (OVERVIEW) */}
+      <section className="py-16 md:py-20 bg-white w-full">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
+            Comprehensive Healthcare Solutions
+          </h2>
+          <div className="w-16 h-1 bg-emerald-500 mx-auto mt-6 mb-6 rounded-full"></div>
+          <p className="text-lg md:text-xl text-slate-600 max-w-6xl mx-auto leading-relaxed font-normal">
+            We provide{" "}
+            <span className="font-semibold text-slate-900">
+              end-to-end healthcare, infrastructure, and compliance solutions
+            </span>{" "}
+            — covering everything from idea stage to execution and ongoing
+            operations.
+          </p>
+        </div>
+      </section>
+
+      {/* 6. WHAT WE DO (OUR SERVICES TOTAL 9) */}
+      <section className="pb-16 md:pb-24 bg-white w-full border-b border-slate-200">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                num: "1",
+                title: "Preventive & Monitoring Health Packages",
+                desc: "Tailored screening for individuals, corporates, and groups.",
+              },
+              {
+                num: "2",
+                title: "Advanced Diagnostics & Testing",
+                desc: "LC-MS/MS and advanced biomarker testing for personalized healthcare.",
+              },
+              {
+                num: "3",
+                title: "Veterinary Diagnostic Services",
+                desc: "Livestock health management & companion animal diagnostics.",
+              },
+              {
+                num: "4",
+                title: "Diagnostic Lab Setup & Consulting",
+                desc: "End-to-end support for establishing NABL compliant facilities.",
+              },
+              {
+                num: "5",
+                title: "Vaccination & Health Camps",
+                desc: "Corporate, school, and community-focused health initiatives.",
+              },
+              {
+                num: "6",
+                title: "Occupational Healthcare Services",
+                desc: "Workplace health solutions and industrial health assessments.",
+              },
+              {
+                num: "7",
+                title: "Hospital Planning & Construction",
+                desc: "Infrastructure development, equipment planning & supervision.",
+              },
+              {
+                num: "8",
+                title: "Accreditation & Certification",
+                desc: "Complete support for NABH, NABL, ISO, and fire safety.",
+              },
+              {
+                num: "9",
+                title: "Project Reports & Market Research",
+                desc: "Feasibility studies, loans, and market insights for healthcare.",
+              },
+            ].map((srv, i) => (
+              <div
+                key={i}
+                className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow group"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center font-bold text-lg group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                    {srv.num}
+                  </span>
+                  <h4 className="font-bold text-slate-900 text-lg leading-tight">
+                    {srv.title}
+                  </h4>
+                </div>
+                <p className="text-base text-slate-500 pl-14 font-normal leading-relaxed">
+                  {srv.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 bg-slate-900 text-white p-8 md:p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between shadow-xl w-full">
+            <div className="text-center md:text-left">
+              <h4 className="font-bold text-2xl md:text-3xl mb-2">
+                Additional Engineering & Execution Services
+              </h4>
+              <p className="text-slate-300 text-base font-light">
+                Engineering solutions, seepage systems, interiors, and complete
+                execution.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="mt-6 md:mt-0 px-8 py-3.5 bg-emerald-500 rounded-full font-semibold text-sm uppercase tracking-widest hover:bg-emerald-400 text-slate-900 transition-all shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              Request Info
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* SUMMARY REPORT */}
+      <section className="py-16 md:py-20 bg-slate-50 w-full border-b border-slate-200">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-slate-200 mb-16">
             {[
               { num: "1,000+", label: "Health Screenings" },
               { num: "50+", label: "Corporate Camps" },
@@ -355,45 +298,43 @@ export default function Home() {
               { num: "100%", label: "Compliance Success" },
             ].map((stat, idx) => (
               <div key={idx} className="group cursor-default">
-                <p className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-3 group-hover:text-emerald-500 transition-colors duration-300 group-hover:scale-110 inline-block transform">
+                <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-1 group-hover:text-emerald-500 transition-colors duration-300 inline-block transform">
                   {stat.num}
                 </p>
-                <p className="text-xs text-slate-500 font-bold uppercase tracking-widest">
+                <p className="text-xs text-slate-500 font-semibold uppercase tracking-widest">
                   {stat.label}
                 </p>
               </div>
             ))}
           </div>
 
-          {/* ADVANCED LIVE DASHBOARD GRAPHIC */}
-          <div className="bg-slate-900 rounded-3xl p-1 shadow-2xl relative overflow-hidden group">
+          <div className="bg-slate-900 rounded-3xl p-1 shadow-2xl relative overflow-hidden group w-full">
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
-
             <div className="bg-slate-900 rounded-[23px] p-8 md:p-12 relative z-10 border border-slate-700/50">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 border-b border-slate-800 pb-8">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 border-b border-slate-800 pb-6">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
                     <span className="relative flex h-3 w-3">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
                     </span>
-                    <span className="text-emerald-400 font-bold tracking-widest uppercase text-xs">
+                    <span className="text-emerald-400 font-semibold tracking-widest uppercase text-xs">
                       Live Demo
                     </span>
                   </div>
-                  <h3 className="text-3xl font-extrabold text-white tracking-tight">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
                     Organization Health Summary
                   </h3>
-                  <p className="text-slate-400 mt-2">
+                  <p className="text-slate-400 mt-1 text-base font-light">
                     Example Corporate Wellness Dashboard Report
                   </p>
                 </div>
-                <div className="mt-6 md:mt-0 bg-slate-800 px-6 py-3 rounded-xl border border-slate-700 flex gap-8">
+                <div className="mt-6 md:mt-0 bg-slate-800/80 px-6 py-4 rounded-2xl border border-slate-700 flex gap-8">
                   <div>
-                    <p className="text-slate-400 text-xs uppercase tracking-widest font-bold">
+                    <p className="text-slate-400 text-xs uppercase tracking-widest font-semibold mb-1">
                       Total Screened
                     </p>
-                    <p className="text-2xl font-bold text-white">
+                    <p className="text-3xl font-bold text-white">
                       600{" "}
                       <span className="text-sm text-emerald-400 font-normal">
                         (95%)
@@ -401,18 +342,18 @@ export default function Home() {
                     </p>
                   </div>
                   <div>
-                    <p className="text-slate-400 text-xs uppercase tracking-widest font-bold">
+                    <p className="text-slate-400 text-xs uppercase tracking-widest font-semibold mb-1">
                       Critical Alerts
                     </p>
-                    <p className="text-2xl font-bold text-rose-400">18</p>
+                    <p className="text-3xl font-bold text-rose-400">18</p>
                   </div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
                 <div>
-                  <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
-                    <span className="text-emerald-500">📊</span> Risk
+                  <h4 className="text-white font-semibold text-xl mb-6 flex items-center gap-3">
+                    <span className="text-emerald-500 text-2xl">📊</span> Risk
                     Distribution
                   </h4>
                   <div className="space-y-6">
@@ -437,39 +378,38 @@ export default function Home() {
                       },
                     ].map((bar, i) => (
                       <div key={i} className="group/bar cursor-default">
-                        <div className="flex justify-between text-sm mb-2">
+                        <div className="flex justify-between text-base mb-2">
                           <span className="text-slate-300 font-medium">
                             {bar.label}
                           </span>
-                          <span className="text-white font-bold">
+                          <span className="text-white font-semibold">
                             {bar.pct}
                           </span>
                         </div>
-                        <div className="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+                        <div className="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
                           <div
-                            className={`${bar.color} h-3 rounded-full w-0 ${bar.hover} transition-all duration-1000 ease-out`}
+                            className={`${bar.color} h-2.5 rounded-full w-0 ${bar.hover} transition-all duration-1000 ease-out`}
                             style={{ width: bar.pct }}
                           ></div>
                         </div>
                       </div>
                     ))}
                   </div>
-
-                  <div className="mt-10">
-                    <p className="text-slate-400 text-xs uppercase tracking-widest font-bold mb-4">
+                  <div className="mt-8">
+                    <p className="text-slate-400 text-xs uppercase tracking-widest font-semibold mb-3">
                       Top Lifestyle Risks Detected
                     </p>
-                    <div className="flex flex-wrap gap-3">
-                      <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-xs font-semibold text-slate-300">
+                    <div className="flex flex-wrap gap-2.5">
+                      <span className="px-4 py-1.5 bg-slate-800/80 border border-slate-700 rounded-full text-xs font-medium text-slate-300">
                         Sedentary: 42%
                       </span>
-                      <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-xs font-semibold text-slate-300">
+                      <span className="px-4 py-1.5 bg-slate-800/80 border border-slate-700 rounded-full text-xs font-medium text-slate-300">
                         Obesity: 36%
                       </span>
-                      <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-xs font-semibold text-slate-300">
+                      <span className="px-4 py-1.5 bg-slate-800/80 border border-slate-700 rounded-full text-xs font-medium text-slate-300">
                         Vision: 29%
                       </span>
-                      <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-xs font-semibold text-slate-300">
+                      <span className="px-4 py-1.5 bg-slate-800/80 border border-slate-700 rounded-full text-xs font-medium text-slate-300">
                         Smokers: 18%
                       </span>
                     </div>
@@ -477,9 +417,9 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
-                    <span className="text-cyan-500">🔬</span> Key Health
-                    Insights
+                  <h4 className="text-white font-semibold text-xl mb-6 flex items-center gap-3">
+                    <span className="text-cyan-500 text-2xl">🔬</span> Key
+                    Health Insights
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {[
@@ -510,28 +450,28 @@ export default function Home() {
                     ].map((insight, i) => (
                       <div
                         key={i}
-                        className="bg-slate-800/50 border border-slate-700 p-4 rounded-xl hover:bg-slate-800 transition-colors cursor-default group/card"
+                        className="bg-slate-800/40 border border-slate-700/50 p-5 rounded-2xl hover:bg-slate-800/80 transition-colors cursor-default group/card"
                       >
-                        <p className="text-sm font-bold text-white mb-3">
+                        <p className="text-base font-bold text-white mb-3">
                           {insight.title}
                         </p>
-                        <div className="space-y-2">
-                          <div className="flex items-center justify-between text-xs">
-                            <span className="text-emerald-400 flex items-center gap-1">
+                        <div className="space-y-2.5">
+                          <div className="flex items-center justify-between text-xs font-medium">
+                            <span className="text-emerald-400 flex items-center gap-2">
                               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>{" "}
                               {insight.normal}
                             </span>
                           </div>
                           {insight.warn && (
-                            <div className="flex items-center justify-between text-xs">
-                              <span className="text-amber-400 flex items-center gap-1">
+                            <div className="flex items-center justify-between text-xs font-medium">
+                              <span className="text-amber-400 flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>{" "}
                                 {insight.warn}
                               </span>
                             </div>
                           )}
-                          <div className="flex items-center justify-between text-xs">
-                            <span className="text-rose-400 flex items-center gap-1">
+                          <div className="flex items-center justify-between text-xs font-medium">
+                            <span className="text-rose-400 flex items-center gap-2">
                               <span className="w-1.5 h-1.5 rounded-full bg-rose-400 group-hover/card:animate-pulse"></span>{" "}
                               {insight.critical}
                             </span>
@@ -547,52 +487,147 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. OUR PROCESS */}
-      <section id="process" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-20">
-            Our End-to-End Process
+      {/* 7. PRO TIP QUOTATION (Updated to sleek card texture) */}
+      <section className="py-16 md:py-24 bg-slate-50 w-full border-b border-slate-200">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="relative bg-white rounded-3xl p-10 md:p-16 border border-slate-200 shadow-xl shadow-slate-200/40 overflow-hidden w-full flex items-center justify-center">
+            {/* Pure CSS Dot Texture */}
+            <div
+              className="absolute inset-0 opacity-20 pointer-events-none"
+              style={{
+                backgroundImage:
+                  "radial-gradient(#cbd5e1 1px, transparent 1px)",
+                backgroundSize: "24px 24px",
+              }}
+            ></div>
+            {/* Subtle Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/60 via-transparent to-cyan-50/40 pointer-events-none"></div>
+
+            <div className="relative z-10 text-center max-w-6xl mx-auto px-4 md:px-8 py-4">
+              <span className="text-emerald-200 text-6xl md:text-8xl leading-none font-serif absolute -top-4 md:-top-8 -left-2 md:-left-6 opacity-60 select-none">
+                "
+              </span>
+              <h2 className="text-2xl md:text-4xl font-medium text-slate-700 tracking-tight leading-relaxed">
+                We don’t just provide services — we build and scale complete
+                healthcare ecosystems.
+              </h2>
+              <span className="text-emerald-200 text-6xl md:text-8xl leading-none font-serif absolute -bottom-8 md:-bottom-12 -right-2 md:-right-6 opacity-60 select-none">
+                "
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. WHY CHOOSE US */}
+      <section
+        id="why-us"
+        className="py-16 md:py-20 bg-white w-full border-b border-slate-200"
+      >
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
+              Why Choose Infinite Medi Health
+            </h2>
+            <div className="w-16 h-1 bg-emerald-500 mx-auto mt-6 rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {[
+              {
+                title: "All-in-One Platform",
+                desc: "No need to manage multiple vendors—we handle everything.",
+              },
+              {
+                title: "Affordable Quality",
+                desc: "High-quality services at optimized, cost-effective pricing.",
+              },
+              {
+                title: "Customized Solutions",
+                desc: "Tailored services for individuals, corporates, and businesses.",
+              },
+              {
+                title: "Fast Execution Team",
+                desc: "Quick turnaround with high accuracy and reliability.",
+              },
+              {
+                title: "Technology-Driven Approach",
+                desc: "Smart tools for monitoring, reporting, and scalability.",
+              },
+              {
+                title: "Corporate Health Expertise",
+                desc: "Specialized in employee wellness, camps, and compliance.",
+              },
+            ].map((usp, i) => (
+              <div
+                key={i}
+                className="bg-slate-50 border border-slate-100 p-8 rounded-3xl text-center hover:shadow-lg hover:border-emerald-200 transition-all duration-300"
+              >
+                <div className="w-14 h-14 mx-auto bg-emerald-100/50 rounded-full flex items-center justify-center mb-5 text-emerald-600 text-xl font-bold">
+                  ✔
+                </div>
+                <h4 className="font-bold text-slate-900 text-xl mb-3">
+                  {usp.title}
+                </h4>
+                <p className="text-base text-slate-500 font-normal leading-relaxed">
+                  {usp.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 9. OUR PROCESS */}
+      <section
+        id="process"
+        className="py-16 md:py-20 bg-slate-50 w-full border-b border-slate-200"
+      >
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-14 md:mb-16">
+            Our End-to-End Healthcare Process
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative">
-            <div className="hidden md:block absolute top-10 left-[10%] w-[80%] h-0.5 bg-slate-200 z-0">
+            <div className="hidden md:block absolute top-12 left-[10%] w-[80%] h-0.5 bg-slate-200 z-0">
               <div className="h-full bg-gradient-to-r from-emerald-400 to-cyan-400 w-full opacity-50"></div>
             </div>
 
             {[
               {
-                step: "01",
+                step: "Step 1",
                 title: "Consultation",
-                desc: "We deeply understand your health or business setup needs.",
+                desc: "We understand your needs (health / business / setup)",
               },
               {
-                step: "02",
-                title: "Custom Plan",
-                desc: "We design a tailored, data-driven solution and project timeline.",
+                step: "Step 2",
+                title: "Customized Plan",
+                desc: "We design a tailored solution based on your requirements",
               },
               {
-                step: "03",
+                step: "Step 3",
                 title: "Execution",
-                desc: "Our expert team implements the solution end-to-end.",
+                desc: "Our expert team implements the solution end-to-end",
               },
               {
-                step: "04",
-                title: "Support",
-                desc: "Continuous tracking, compliance monitoring, and improvement.",
+                step: "Step 4",
+                title: "Monitoring & Support",
+                desc: "Continuous tracking, support, and improvement",
               },
             ].map((item, idx) => (
               <div
                 key={idx}
                 className="relative z-10 flex flex-col items-center group"
               >
-                <div className="w-20 h-20 bg-white border-4 border-slate-100 rounded-full flex items-center justify-center text-xl font-extrabold text-slate-400 mb-6 shadow-md group-hover:border-emerald-500 group-hover:text-emerald-500 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-500 transform group-hover:-translate-y-2 relative overflow-hidden">
+                <div className="w-24 h-24 bg-white border-4 border-slate-100 rounded-full flex items-center justify-center text-sm font-bold text-slate-400 mb-5 shadow-sm group-hover:border-emerald-500 group-hover:text-emerald-500 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transition-all duration-500 transform group-hover:-translate-y-1 relative overflow-hidden">
                   <div className="absolute inset-0 bg-emerald-50/50 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-                  <span className="relative z-10">{item.step}</span>
+                  <span className="relative z-10 uppercase tracking-widest">
+                    {item.step}
+                  </span>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-slate-500 text-sm px-4 leading-relaxed">
+                <p className="text-slate-500 text-base px-2 leading-relaxed font-normal">
                   {item.desc}
                 </p>
               </div>
@@ -601,151 +636,281 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. DIAGNOSTIC KART */}
+      {/* 10. DIAGNOSTIC KART */}
       <section
         id="diagnostic-kart"
-        className="py-32 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center relative bg-fixed"
+        className="py-20 md:py-28 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center relative bg-fixed w-full"
       >
         <div className="absolute inset-0 bg-slate-900/90 backdrop-blur-sm"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-block relative mb-8">
-            <span className="absolute inset-0 bg-cyan-400 blur-md opacity-40 rounded-full"></span>
-            <span className="relative bg-slate-900 border border-cyan-500/50 text-cyan-400 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-              Platform Coming Soon
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
+          <div className="inline-block relative mb-6">
+            <span className="absolute inset-0 bg-cyan-400 blur-md opacity-30 rounded-full"></span>
+            <span className="relative bg-slate-900 border border-cyan-500/30 text-cyan-400 px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+              Coming Soon – Smart Diagnostic Platform
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-8 drop-shadow-lg">
+          <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-md">
             Diagnostic <span className="font-light text-cyan-400">Kart</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-16 font-light leading-relaxed">
-            A smart digital platform designed to simplify diagnostics. Book
-            tests online, compare prices, schedule home sample collection, and
-            access digital reports instantly via our AI-driven portal.
+          <p className="text-lg md:text-xl text-slate-300 max-w-5xl mx-auto mb-10 font-light leading-relaxed">
+            A digital platform designed to simplify diagnostics. Goal: Make
+            diagnostics fast, transparent, and accessible.
           </p>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
-              { icon: "📱", label: "Book Online" },
-              { icon: "🏠", label: "Home Collect" },
-              { icon: "📊", label: "Digital Reports" },
+              { icon: "📱", label: "Book lab tests online" },
+              { icon: "⚖️", label: "Compare prices easily" },
+              { icon: "🏠", label: "Schedule home sample collection" },
+              { icon: "📊", label: "Access reports anytime" },
             ].map((feature, i) => (
               <div
                 key={i}
-                className="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl text-center w-48 hover:bg-white/10 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
+                className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-3xl text-center w-56 hover:bg-white/10 hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
               >
-                <span className="block text-4xl mb-4 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-110">
+                <span className="block text-4xl mb-3 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105">
                   {feature.icon}
                 </span>
-                <span className="text-sm font-bold text-white uppercase tracking-widest">
+                <span className="text-xs font-semibold text-white/90 uppercase tracking-widest leading-relaxed">
                   {feature.label}
                 </span>
               </div>
             ))}
           </div>
+          <a
+            href="#contact"
+            className="inline-block px-10 py-4 bg-cyan-500 text-slate-900 rounded-full font-semibold text-sm uppercase tracking-widest hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:-translate-y-0.5"
+          >
+            Join Early Access / Get Notified
+          </a>
         </div>
       </section>
 
-      {/* 8. FINAL CTA & CONTACT FORM */}
-      <section id="contact" className="py-24 bg-white relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold text-slate-900 tracking-tight">
-              Ready to Start Your Project?
-            </h2>
-            <div className="w-16 h-1.5 bg-emerald-500 mx-auto mt-6 mb-6 rounded-full"></div>
-            <p className="text-slate-500 text-lg">
-              Book a consultation, schedule a health camp, or request a detailed
-              project report.
-            </p>
-          </div>
+      {/* 11, 12, 13. CONTACT, ENQUIRY FORM, & CALL TO ACTION */}
+      <section
+        id="contact"
+        className="py-16 md:py-20 bg-white w-full border-b border-slate-200"
+      >
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left Side: Contact Details & CTA */}
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">
+                Get In Touch
+              </h2>
+              <div className="w-16 h-1 bg-emerald-500 mb-8 rounded-full"></div>
 
-          <form
-            action="YOUR_FORMSPREE_LINK_HERE"
-            method="POST"
-            className="bg-white p-8 md:p-12 rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-slate-100 relative overflow-hidden"
-          >
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
+              <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 mb-8 shadow-sm">
+                <ul className="space-y-6">
+                  <li className="flex items-center gap-5 text-lg font-medium text-slate-700">
+                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+                      📞
+                    </span>
+                    +91 73865 14350 / +91 95151 14350
+                  </li>
+                  <li className="flex items-center gap-5 text-lg font-medium text-slate-700">
+                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+                      📧
+                    </span>
+                    info@infinitemedihealth.com
+                  </li>
+                  <li className="flex items-start gap-5 text-lg font-medium text-slate-700">
+                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+                      📍
+                    </span>
+                    <span className="leading-relaxed text-base mt-1">
+                      Plot No-44, 1st floor, Rainbow Meadows, Road no-3, Kista
+                      Reddy Pet, Hyderabad, Telangana - 502319
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-900 font-medium"
-                  placeholder="John Doe"
-                />
-              </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-900 font-medium"
-                  placeholder="john@example.com"
-                />
-              </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-900 font-medium"
-                  placeholder="+91 XXXX XXXXX"
-                />
-              </div>
-              <div>
-                <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-                  Service Required
-                </label>
-                <div className="relative">
-                  <select
-                    name="service"
-                    className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-900 font-medium appearance-none cursor-pointer"
-                  >
-                    <option>Corporate Health Camp</option>
-                    <option>Start a Diagnostic Lab</option>
-                    <option>Hospital Setup / Compliance</option>
-                    <option>Book Health Tests</option>
-                    <option>Other</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-slate-400">
-                    ▼
-                  </div>
+              {/* CALL TO ACTION */}
+              <div className="bg-slate-900 p-8 md:p-10 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/20 rounded-full blur-[80px]"></div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-6 relative z-10 leading-snug">
+                  Ready to Improve Healthcare or Start Your Project?
+                </h3>
+                <div className="flex flex-col gap-4 relative z-10 font-semibold text-xs md:text-sm uppercase tracking-widest text-emerald-400">
+                  <span className="flex items-center gap-3 hover:text-white cursor-pointer transition-colors">
+                    <span className="text-lg">👉</span> Book Consultation
+                  </span>
+                  <span className="flex items-center gap-3 hover:text-white cursor-pointer transition-colors">
+                    <span className="text-lg">👉</span> Schedule Health Camp
+                  </span>
+                  <span className="flex items-center gap-3 hover:text-white cursor-pointer transition-colors">
+                    <span className="text-lg">👉</span> Get Project Report
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="mb-8">
-              <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-                Your Message
-              </label>
-              <textarea
-                name="message"
-                required
-                rows={4}
-                className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-900 font-medium resize-none"
-                placeholder="Tell us about your requirements..."
-              ></textarea>
+
+            {/* Right Side: Quick Enquiry Form */}
+            <div>
+              <form
+                action="YOUR_FORMSPREE_LINK_HERE"
+                method="POST"
+                className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden h-full"
+              >
+                <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
+
+                <h3 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
+                  Quick Inquiry Form
+                </h3>
+
+                <div className="space-y-5 mb-8">
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
+                      Phone
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base"
+                      placeholder="Your Phone Number"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
+                      Service Required
+                    </label>
+                    <div className="relative">
+                      <select
+                        name="service"
+                        className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base appearance-none cursor-pointer"
+                      >
+                        <option>Corporate Health Camp</option>
+                        <option>Start a Diagnostic Lab</option>
+                        <option>Hospital Setup / Compliance</option>
+                        <option>Book Health Tests</option>
+                        <option>Other</option>
+                      </select>
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-slate-400">
+                        ▼
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base resize-none"
+                      placeholder="Tell us about your requirements..."
+                    ></textarea>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-slate-900 text-white font-semibold py-4 rounded-xl hover:bg-emerald-500 hover:shadow-[0_10px_20px_rgba(16,185,129,0.3)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-sm uppercase tracking-widest relative overflow-hidden group"
+                >
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    Submit Inquiry{" "}
+                    <span className="text-emerald-400 group-hover:text-white transition-colors text-lg leading-none">
+                      &rarr;
+                    </span>
+                  </span>
+                </button>
+              </form>
             </div>
-            <button
-              type="submit"
-              className="w-full bg-slate-900 text-white font-bold py-5 rounded-xl hover:bg-emerald-500 hover:shadow-[0_10px_25px_rgba(16,185,129,0.4)] hover:-translate-y-1 active:translate-y-0 transition-all duration-300 text-sm uppercase tracking-widest relative overflow-hidden group"
-            >
-              <span className="relative z-10 flex items-center justify-center gap-2">
-                Submit Inquiry{" "}
-                <span className="text-emerald-400 group-hover:text-white transition-colors">
-                  &rarr;
-                </span>
+          </div>
+        </div>
+      </section>
+
+      {/* 14. WHAT ARE YOU LOOKING FOR (SMART ENTRY) */}
+      <section
+        id="smart-entry"
+        className="py-16 md:py-20 bg-slate-50 w-full relative"
+      >
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
+              What are you looking for?
+            </h2>
+            <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-6 rounded-full"></div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {[
+              { title: "Improve Employee Health", icon: "🏢" },
+              { title: "Start a Diagnostic Lab", icon: "🔬" },
+              { title: "Setup Hospital", icon: "🏥" },
+              { title: "Book Health Tests", icon: "🩸" },
+              { title: "Compliance & Accreditation", icon: "📜" },
+            ].map((item, idx) => (
+              <a
+                href="#contact"
+                key={idx}
+                className="group bg-white p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_15px_30px_-5px_rgba(16,185,129,0.1)] hover:border-emerald-200 text-center cursor-pointer flex flex-col items-center justify-center"
+              >
+                <div className="text-5xl mb-5 transform group-hover:scale-105 transition-transform">
+                  {item.icon}
+                </div>
+                <h3 className="text-base font-bold text-slate-900 leading-snug">
+                  {item.title}
+                </h3>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 15. START YOUR LAB (HIGH-TICKET OFFER) */}
+      <section
+        id="high-ticket"
+        className="py-16 md:py-24 bg-slate-900 text-white w-full relative overflow-hidden"
+      >
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] animate-pulse"></div>
+        <div
+          className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div className="lg:w-2/3 text-center lg:text-left">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight tracking-tight">
+              Start Your Lab / Hospital in{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                30–90 Days.
               </span>
-            </button>
-          </form>
+            </h2>
+            <ul className="flex flex-wrap justify-center lg:justify-start gap-4 text-base font-semibold mb-10">
+              {["Project Report", "Setup", "Compliance", "Operations"].map(
+                (tag, i) => (
+                  <li
+                    key={i}
+                    className="bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 px-6 py-2.5 rounded-full flex items-center gap-3 shadow-sm text-slate-200"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)]"></span>{" "}
+                    {tag}
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
+          <div className="lg:w-1/3 w-full flex justify-center lg:justify-end">
+            <a
+              href="#contact"
+              className="w-full sm:w-auto px-10 py-5 bg-emerald-500 text-slate-900 rounded-full font-bold text-lg uppercase tracking-widest hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.3)] text-center whitespace-nowrap"
+            >
+              Get Detailed Plan
+            </a>
+          </div>
         </div>
       </section>
     </main>
