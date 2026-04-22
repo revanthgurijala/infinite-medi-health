@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Infinite Medi Health | Complete Healthcare Solutions",
   description:
-    "End-to-end healthcare, compliance, and infrastructure solutions through a single integrated platform.",
+    "End-to-End Healthcare, Compliance, and Infrastructure Solutions through a single integrated platform.",
 };
 
 export default function RootLayout({
@@ -130,8 +130,8 @@ export default function RootLayout({
               </p>
               <p className="text-slate-400 text-sm leading-relaxed pr-8">
                 Precision Diagnostics. Functional Insights. Preventive Outcomes.
-                Delivering next-generation, technology-driven healthcare
-                solutions.
+                Delivering Next-Generation, Technology-Driven Healthcare
+                Solutions.
               </p>
             </div>
             <div>

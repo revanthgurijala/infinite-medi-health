@@ -16,7 +16,7 @@ export default function Services() {
     {
       icon: <Building2 className="w-6 h-6" />,
       title: "Healthcare Infrastructure & Setup",
-      subtitle: "End-to-end hospital & lab development solutions",
+      subtitle: "End-To-End Hospital & Lab Development Solutions",
       items: [
         "Hospital Construction Management (“You Dream It, We Build It”)",
         "Pharmacy Setup",
@@ -31,7 +31,7 @@ export default function Services() {
     {
       icon: <FileCheck className="w-6 h-6" />,
       title: "Compliance, Audit & Accreditation",
-      subtitle: "Ensuring legal, quality, and revenue optimization standards",
+      subtitle: "Ensuring Legal, Quality, And Revenue Optimization Standards",
       items: [
         "Audit Management Services (Pharmacy, Lab, Hospital Operations)",
         "Revenue Optimization & Marketing Flow Audits",
@@ -44,7 +44,7 @@ export default function Services() {
     {
       icon: <MonitorSmartphone className="w-6 h-6" />,
       title: "Diagnostic & Digital Health Solutions",
-      subtitle: "Technology-driven diagnostics and health tracking ecosystem",
+      subtitle: "Technology-Driven Diagnostics And Health Tracking Ecosystem",
       items: [
         "Advanced Diagnostics & Specialized Testing (LC-MS/MS, Biomarkers)",
         "Diagnostic Kart (Lifestyle + Health Record Tracking Platform)",
@@ -55,7 +55,7 @@ export default function Services() {
     {
       icon: <HeartPulse className="w-6 h-6" />,
       title: "Preventive Healthcare & Wellness",
-      subtitle: "Proactive health management for individuals & organizations",
+      subtitle: "Proactive Health Management For Individuals & Organizations",
       items: [
         "Preventive Health Checkup Packages",
         "Chronic Disease Monitoring Programs",
@@ -66,7 +66,7 @@ export default function Services() {
     {
       icon: <Users className="w-6 h-6" />,
       title: "Corporate & Community Health Services",
-      subtitle: "Large-scale health programs & employee wellness solutions",
+      subtitle: "Large-Scale Health Programs & Employee Wellness Solutions",
       items: [
         "Vaccination Camps (Corporate, Schools, Institutions)",
         "Corporate Health Checkups",
@@ -79,7 +79,7 @@ export default function Services() {
     {
       icon: <PawPrint className="w-6 h-6" />,
       title: "Veterinary Diagnostics",
-      subtitle: "Expanding healthcare beyond humans",
+      subtitle: "Expanding Healthcare Beyond Humans",
       items: [
         "Livestock Health Diagnostics",
         "Pet & Companion Animal Testing",
@@ -89,7 +89,7 @@ export default function Services() {
     {
       icon: <TrendingUp className="w-6 h-6" />,
       title: "Healthcare Business Consulting & Growth",
-      subtitle: "Turn ideas into profitable healthcare businesses",
+      subtitle: "Turn Ideas Into Profitable Healthcare Businesses",
       items: [
         "Detailed Project Reports (DPR with SWOT Analysis)",
         "Market Research & Feasibility Studies",
@@ -102,7 +102,7 @@ export default function Services() {
     {
       icon: <Plane className="w-6 h-6" />,
       title: "Medical Tourism",
-      subtitle: "End-to-end patient travel & treatment solutions",
+      subtitle: "End-To-End Patient Travel & Treatment Solutions",
       items: [
         "Domestic & International Patient Handling",
         "Hospital Tie-ups & Treatment Coordination",
@@ -113,7 +113,7 @@ export default function Services() {
     {
       icon: <Network className="w-6 h-6" />,
       title: "Integrated Healthcare Ecosystem (USP Layer)",
-      subtitle: "Your unique positioning — combine everything together",
+      subtitle: "Your Unique Positioning — Combine Everything Together",
       items: [
         "End-to-End Healthcare Solutions (Setup → Compliance → Operations → Revenue)",
         "Integrated Digital + Diagnostic + Consulting Model",

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Eye,
   Target,
@@ -57,7 +59,7 @@ export default function Home() {
                   Build, Manage & Scale Healthcare
                 </h2>
                 <p className="text-sm md:text-base font-medium text-emerald-400 tracking-wide">
-                  Transforming Health ecosystems end-to-end.
+                  Transforming Health Ecosystems End-to-End.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
@@ -151,7 +153,7 @@ export default function Home() {
                 Infinite Medi Health
               </span>{" "}
               is a next-generation healthcare solutions company integrating
-              diagnostics, preventive care, and technology to deliver better
+              Diagnostics, Preventive Care, and Technology to deliver better
               outcomes and long-term wellness.
             </p>
             <a
@@ -182,8 +184,8 @@ export default function Home() {
               <br />
               We combine{" "}
               <span className="font-semibold text-slate-900">
-                advanced diagnostics, preventive healthcare, and
-                technology-driven programs
+                Advanced Diagnostics, Preventive Healthcare, and
+                Technology-Driven Programs
               </span>{" "}
               into one seamless ecosystem—ensuring early detection, better
               outcomes, and long-term wellness.
@@ -199,8 +201,8 @@ export default function Home() {
                 Our Vision
               </h3>
               <p className="text-slate-600 text-base leading-relaxed font-normal">
-                To create a future where healthcare is predictive, preventive,
-                and personalized, accessible through a single intelligent
+                To create a future where healthcare is Predictive, Preventive,
+                and Personalized, Accessible through a single intelligent
                 platform.
               </p>
             </div>
@@ -230,28 +232,28 @@ export default function Home() {
                     className="w-5 h-5 text-emerald-500 shrink-0"
                     strokeWidth={2.5}
                   />{" "}
-                  Trusted & transparent healthcare
+                  Trusted & Transparent Healthcare
                 </li>
                 <li className="flex items-center gap-3">
                   <Activity
                     className="w-5 h-5 text-emerald-500 shrink-0"
                     strokeWidth={2.5}
                   />{" "}
-                  Early diagnosis & prevention
+                  Early Diagnosis & Prevention
                 </li>
                 <li className="flex items-center gap-3">
                   <Users
                     className="w-5 h-5 text-emerald-500 shrink-0"
                     strokeWidth={2.5}
                   />{" "}
-                  Healthier communities & workplaces
+                  Healthier Communities & Workplaces
                 </li>
                 <li className="flex items-center gap-3">
                   <Sparkles
                     className="w-5 h-5 text-emerald-500 shrink-0"
                     strokeWidth={2.5}
                   />{" "}
-                  Continuous innovation
+                  Continuous Innovation
                 </li>
               </ul>
             </div>
@@ -269,7 +271,7 @@ export default function Home() {
           <p className="text-lg md:text-xl text-slate-600 max-w-6xl mx-auto leading-relaxed font-normal">
             We provide{" "}
             <span className="font-semibold text-slate-900">
-              end-to-end healthcare, infrastructure, and compliance solutions
+              End-to-End Healthcare, Infrastructure, and Compliance Solutions
             </span>{" "}
             — covering everything from idea stage to execution and ongoing
             operations.
@@ -277,7 +279,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. WHAT WE DO (OUR SERVICES TOTAL 9 - REPLACED NUMBERS WITH ICONS) */}
+      {/* 6. WHAT WE DO (OUR SERVICES TOTAL 9) */}
       <section className="pb-16 md:pb-24 bg-white w-full border-b border-slate-200">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -355,8 +357,8 @@ export default function Home() {
                 Additional Engineering & Execution Services
               </h4>
               <p className="text-slate-300 text-base font-light">
-                Engineering solutions, seepage systems, interiors, and complete
-                execution.
+                Engineering Solutions, Seepage Systems, Interiors, and Complete
+                Execution.
               </p>
             </div>
             <a
@@ -595,7 +597,7 @@ export default function Home() {
               </span>
               <h2 className="text-2xl md:text-4xl font-medium text-slate-700 tracking-tight leading-relaxed">
                 We don’t just provide services — we build and scale complete
-                healthcare ecosystems.
+                Healthcare Ecosystems.
               </h2>
               <span className="text-emerald-200 text-6xl md:text-8xl leading-none font-serif absolute -bottom-8 md:-bottom-12 -right-2 md:-right-6 opacity-60 select-none">
                 "
@@ -651,21 +653,21 @@ export default function Home() {
               },
               {
                 title: "Fast Execution Team",
-                desc: "Quick turnaround with high accuracy and reliability.",
+                desc: "Quick turnaround with High Accuracy and Reliability.",
                 icon: (
                   <Zap className="w-6 h-6 text-emerald-600" strokeWidth={2.5} />
                 ),
               },
               {
                 title: "Technology-Driven Approach",
-                desc: "Smart tools for monitoring, reporting, and scalability.",
+                desc: "Smart tools for Monitoring, Reporting, and Scalability.",
                 icon: (
                   <Cpu className="w-6 h-6 text-emerald-600" strokeWidth={2.5} />
                 ),
               },
               {
                 title: "Corporate Health Expertise",
-                desc: "Specialized in employee wellness, camps, and compliance.",
+                desc: "Specialized in Employee Wellness, Camps, and Compliance.",
                 icon: (
                   <Building2
                     className="w-6 h-6 text-emerald-600"
@@ -712,22 +714,22 @@ export default function Home() {
               {
                 step: "Step 1",
                 title: "Consultation",
-                desc: "We understand your needs (health / business / setup)",
+                desc: "We Understand Your Needs (Health / Business / Setup)",
               },
               {
                 step: "Step 2",
                 title: "Customized Plan",
-                desc: "We design a tailored solution based on your requirements",
+                desc: "We Design A Tailored Solution Based On Your Requirements",
               },
               {
                 step: "Step 3",
                 title: "Execution",
-                desc: "Our expert team implements the solution end-to-end",
+                desc: "Our Expert Team Implements The Solution End-To-End",
               },
               {
                 step: "Step 4",
                 title: "Monitoring & Support",
-                desc: "Continuous tracking, support, and improvement",
+                desc: "Continuous Tracking, Support, And Improvement",
               },
             ].map((item, idx) => (
               <div
@@ -759,32 +761,37 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-slate-900/90 backdrop-blur-sm"></div>
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          <div className="inline-block relative mb-6">
-            <span className="absolute inset-0 bg-cyan-400 blur-md opacity-30 rounded-full"></span>
-            <span className="relative bg-slate-900 border border-cyan-500/30 text-cyan-400 px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest shadow-[0_0_15px_rgba(34,211,238,0.2)]">
-              Coming Soon – Smart Diagnostic Platform
-            </span>
+          {/* RESPONSIVE ALIGNMENT FIX FOR "COMING SOON" */}
+          <div className="flex justify-center mb-6 w-full">
+            <div className="relative inline-flex items-center justify-center max-w-full">
+              <span className="absolute inset-0 bg-cyan-400 blur-md opacity-30 rounded-full"></span>
+              <span className="relative bg-slate-900 border border-cyan-500/30 text-cyan-400 px-5 py-2 sm:px-6 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-center shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+                Coming Soon – Smart Diagnostic Platform
+              </span>
+            </div>
           </div>
+
           <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-md">
             Diagnostic <span className="font-light text-cyan-400">Kart</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-5xl mx-auto mb-10 font-light leading-relaxed">
-            A digital platform designed to simplify diagnostics. Goal: Make
-            diagnostics fast, transparent, and accessible.
+            A digital platform designed to simplify diagnostics.
+            <br />
+            Goal: Make Diagnostics Fast, Transparent, and Accessible.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
               {
                 icon: <Laptop className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
-                label: "Book lab tests online",
+                label: "Book Lab Tests Online",
               },
               {
                 icon: <Tags className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
-                label: "Compare prices easily",
+                label: "Compare Prices Easily",
               },
               {
                 icon: <Syringe className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
-                label: "Schedule home sample collection",
+                label: "Schedule Home Sample Collection",
               },
               {
                 icon: (
@@ -793,7 +800,7 @@ export default function Home() {
                     strokeWidth={1.5}
                   />
                 ),
-                label: "Access reports anytime",
+                label: "Access Reports Anytime",
               },
             ].map((feature, i) => (
               <div
@@ -834,23 +841,26 @@ export default function Home() {
 
               <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 mb-8 shadow-sm">
                 <ul className="space-y-6">
-                  <li className="flex items-center gap-5 text-lg font-medium text-slate-700">
-                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
-                      <Phone className="w-5 h-5" />
+                  <li className="flex items-center gap-4 sm:gap-5 text-base sm:text-lg font-medium text-slate-700">
+                    <span className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
+                      <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                     </span>
-                    +91 73865 14350 / +91 95151 14350
+                    <span>+91 73865 14350 / +91 95151 14350</span>
                   </li>
-                  <li className="flex items-center gap-5 text-lg font-medium text-slate-700">
-                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
-                      <Mail className="w-5 h-5" />
+                  <li className="flex items-center gap-4 sm:gap-5 text-base sm:text-lg font-medium text-slate-700">
+                    <span className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
+                      <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                     </span>
-                    info@infinitemedihealth.com
+                    {/* Added break-all here so the long email wraps safely on mobile */}
+                    <span className="break-all">
+                      info@infinitemedihealth.com
+                    </span>
                   </li>
-                  <li className="flex items-start gap-5 text-lg font-medium text-slate-700">
-                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
-                      <MapPin className="w-5 h-5" />
+                  <li className="flex items-start gap-4 sm:gap-5 text-base sm:text-lg font-medium text-slate-700">
+                    <span className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
+                      <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                     </span>
-                    <span className="leading-relaxed text-base mt-1">
+                    <span className="leading-relaxed mt-0.5 sm:mt-1">
                       Plot No-44, 1st floor, Rainbow Meadows, Road no-3, Kista
                       Reddy Pet, Hyderabad, Telangana - 502319
                     </span>
@@ -895,62 +905,101 @@ export default function Home() {
                 </h3>
 
                 <div className="space-y-5 mb-8">
+                  {/* Name Field (Letters Only) */}
                   <div>
                     <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
-                      Name
+                      Name <span className="text-rose-500 text-sm">*</span>
                     </label>
                     <input
                       type="text"
                       name="name"
                       required
+                      pattern="[A-Za-z\s]+"
+                      title="Please enter letters only."
+                      onInput={(e) => {
+                        e.currentTarget.value = e.currentTarget.value.replace(
+                          /[^a-zA-Z\s]/g,
+                          "",
+                        );
+                      }}
                       className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base"
                       placeholder="Your Name"
                     />
                   </div>
+
+                  {/* Phone Field (Numbers Only) */}
                   <div>
                     <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
-                      Phone
+                      Phone <span className="text-rose-500 text-sm">*</span>
                     </label>
                     <input
                       type="tel"
                       name="phone"
+                      required
+                      inputMode="numeric"
+                      pattern="[0-9]+"
+                      title="Please enter numbers only."
+                      onInput={(e) => {
+                        e.currentTarget.value = e.currentTarget.value.replace(
+                          /[^0-9]/g,
+                          "",
+                        );
+                      }}
                       className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base"
                       placeholder="Your Phone Number"
                     />
                   </div>
+
+                  {/* Service Dropdown (Hidden Placeholder) */}
                   <div>
                     <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
-                      Service Required
+                      Service Required{" "}
+                      <span className="text-rose-500 text-sm">*</span>
                     </label>
                     <div className="relative">
                       <select
                         name="service"
+                        required
+                        defaultValue=""
                         className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base appearance-none cursor-pointer"
                       >
-                        <option>Corporate Health Camp</option>
-                        <option>Start a Diagnostic Lab</option>
-                        <option>Hospital Setup / Compliance</option>
-                        <option>Book Health Tests</option>
-                        <option>Other</option>
+                        <option value="" disabled hidden>
+                          Select a Service
+                        </option>
+                        <option value="Corporate Health Camp">
+                          Corporate Health Camp
+                        </option>
+                        <option value="Start a Diagnostic Lab">
+                          Start a Diagnostic Lab
+                        </option>
+                        <option value="Hospital Setup / Compliance">
+                          Hospital Setup / Compliance
+                        </option>
+                        <option value="Book Health Tests">
+                          Book Health Tests
+                        </option>
+                        <option value="Other">Other</option>
                       </select>
                       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-slate-400">
                         ▼
                       </div>
                     </div>
                   </div>
+
+                  {/* Message Field (Not Mandatory) */}
                   <div>
                     <label className="block text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">
                       Message
                     </label>
                     <textarea
                       name="message"
-                      required
                       rows={4}
                       className="w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all duration-300 text-slate-800 text-base resize-none"
                       placeholder="Tell us about your requirements..."
                     ></textarea>
                   </div>
                 </div>
+
                 <button
                   type="submit"
                   className="w-full bg-slate-900 text-white font-semibold py-4 rounded-xl hover:bg-emerald-500 hover:shadow-[0_10px_20px_rgba(16,185,129,0.3)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-sm uppercase tracking-widest relative overflow-hidden group"
@@ -976,7 +1025,7 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
-              What are you looking for?
+              What Are You Looking For?
             </h2>
             <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-6 rounded-full"></div>
           </div>
@@ -993,7 +1042,7 @@ export default function Home() {
                 ),
               },
               {
-                title: "Start a Diagnostic Lab",
+                title: "Start A Diagnostic Lab",
                 icon: (
                   <Microscope
                     className="w-10 h-10 mx-auto text-emerald-500"
@@ -1061,19 +1110,19 @@ export default function Home() {
           <div className="lg:w-2/3 text-center lg:text-left">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight tracking-tight">
               Start Your Lab / Hospital in{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+              <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
                 30–90 Days.
               </span>
             </h2>
-            <ul className="flex flex-wrap justify-center lg:justify-start gap-4 text-base font-semibold mb-10">
+            <ul className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 text-xs sm:text-sm md:text-base font-semibold mb-10">
               {["Project Report", "Setup", "Compliance", "Operations"].map(
                 (tag, i) => (
                   <li
                     key={i}
-                    className="bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 px-6 py-2.5 rounded-full flex items-center gap-3 shadow-sm text-slate-200"
+                    className="bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 px-3 sm:px-6 py-2.5 rounded-xl sm:rounded-full flex items-center justify-center sm:justify-start gap-2 sm:gap-3 shadow-sm text-slate-200"
                   >
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)]"></span>{" "}
-                    {tag}
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)] shrink-0"></span>{" "}
+                    <span className="whitespace-nowrap">{tag}</span>
                   </li>
                 ),
               )}
