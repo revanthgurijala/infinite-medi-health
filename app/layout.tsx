@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
+import { Phone, Mail, MapPin, Menu, X } from "lucide-react";
 import "./globals.css";
 
 // Loading dual premium fonts
@@ -26,6 +27,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navLinks = [
+    { name: "Home", link: "/" },
+    { name: "Solutions", link: "/services" },
+    { name: "Start Business", link: "/#high-ticket" },
+    { name: "Why Us", link: "/#why-us" },
+    { name: "Our Process", link: "/#process" },
+    { name: "Diagnostic Kart", link: "/#diagnostic-kart" },
+  ];
+
   return (
     <html
       lang="en"
@@ -34,7 +44,7 @@ export default function RootLayout({
       <body className="antialiased bg-slate-50 text-slate-600">
         {/* ADVANCED GLASSMORPHISM NAVBAR */}
         <nav className="bg-white/80 backdrop-blur-lg border-b border-slate-100 text-blue-950 w-full sticky top-0 z-50 transition-all duration-300">
-          <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 relative">
             <div className="flex justify-between h-20 items-center">
               <a
                 href="/"
@@ -55,16 +65,9 @@ export default function RootLayout({
                 </div>
               </a>
 
-              {/* Menu Links */}
+              {/* Desktop Menu */}
               <div className="hidden lg:flex space-x-6 items-center">
-                {[
-                  { name: "Home", link: "/" },
-                  { name: "Solutions", link: "/services" },
-                  { name: "Start Business", link: "/#high-ticket" },
-                  { name: "Why Us", link: "/#why-us" },
-                  { name: "Our Process", link: "/#process" },
-                  { name: "Diagnostic Kart", link: "/#diagnostic-kart" },
-                ].map((item) => (
+                {navLinks.map((item) => (
                   <a
                     key={item.name}
                     href={item.link}
@@ -82,6 +85,35 @@ export default function RootLayout({
                   Book Consultation
                 </a>
               </div>
+
+              {/* Mobile Hamburger Menu (CSS Only - No JS Required) */}
+              <details className="lg:hidden group relative">
+                <summary className="list-none cursor-pointer p-2 flex items-center justify-center rounded-lg hover:bg-slate-100 transition-colors">
+                  <Menu className="w-7 h-7 text-slate-800 group-open:hidden" />
+                  <X className="w-7 h-7 text-slate-800 hidden group-open:block" />
+                </summary>
+
+                {/* Mobile Dropdown Panel */}
+                <div className="absolute top-[60px] right-0 w-64 bg-white/95 backdrop-blur-xl shadow-2xl border border-slate-100 rounded-3xl flex flex-col p-6 space-y-5 z-50">
+                  {navLinks.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.link}
+                      className="font-bold text-sm uppercase tracking-widest text-slate-700 hover:text-emerald-600 transition-colors"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                  <div className="pt-4 border-t border-slate-100">
+                    <a
+                      href="/#contact"
+                      className="block text-center bg-emerald-500 text-white font-bold py-3 px-6 rounded-full hover:bg-emerald-400 transition-colors text-xs uppercase tracking-widest shadow-lg shadow-emerald-500/30"
+                    >
+                      Book Consultation
+                    </a>
+                  </div>
+                </div>
+              </details>
             </div>
           </div>
         </nav>
@@ -108,13 +140,15 @@ export default function RootLayout({
               </h3>
               <ul className="space-y-3">
                 <li className="text-slate-400 text-sm flex items-center gap-3 hover:text-emerald-400 transition-colors cursor-pointer">
-                  <span className="text-emerald-500">📞</span> +91 73865 14350
+                  <Phone className="w-4 h-4 text-emerald-500 shrink-0" /> +91
+                  73865 14350
                 </li>
                 <li className="text-slate-400 text-sm flex items-center gap-3 hover:text-emerald-400 transition-colors cursor-pointer">
-                  <span className="text-emerald-500">📞</span> +91 95151 14350
+                  <Phone className="w-4 h-4 text-emerald-500 shrink-0" /> +91
+                  95151 14350
                 </li>
                 <li className="text-slate-400 text-sm flex items-center gap-3 hover:text-emerald-400 transition-colors cursor-pointer">
-                  <span className="text-emerald-500">✉️</span>{" "}
+                  <Mail className="w-4 h-4 text-emerald-500 shrink-0" />{" "}
                   info@infinitemedihealth.com
                 </li>
               </ul>
@@ -124,7 +158,7 @@ export default function RootLayout({
                 Headquarters
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed flex items-start gap-3">
-                <span className="text-emerald-500 mt-0.5">📍</span>
+                <MapPin className="w-5 h-5 text-emerald-500 mt-0.5 shrink-0" />
                 <span>
                   Plot No-44, 1st floor, Rainbow Meadows,
                   <br />

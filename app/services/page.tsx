@@ -1,6 +1,20 @@
+import {
+  BadgeCheck,
+  Building2,
+  FileCheck,
+  MonitorSmartphone,
+  HeartPulse,
+  Users,
+  PawPrint,
+  TrendingUp,
+  Plane,
+  Network,
+} from "lucide-react";
+
 export default function Services() {
   const categories = [
     {
+      icon: <Building2 className="w-6 h-6" />,
       title: "Healthcare Infrastructure & Setup",
       subtitle: "End-to-end hospital & lab development solutions",
       items: [
@@ -15,6 +29,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <FileCheck className="w-6 h-6" />,
       title: "Compliance, Audit & Accreditation",
       subtitle: "Ensuring legal, quality, and revenue optimization standards",
       items: [
@@ -27,6 +42,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <MonitorSmartphone className="w-6 h-6" />,
       title: "Diagnostic & Digital Health Solutions",
       subtitle: "Technology-driven diagnostics and health tracking ecosystem",
       items: [
@@ -37,6 +53,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <HeartPulse className="w-6 h-6" />,
       title: "Preventive Healthcare & Wellness",
       subtitle: "Proactive health management for individuals & organizations",
       items: [
@@ -47,6 +64,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <Users className="w-6 h-6" />,
       title: "Corporate & Community Health Services",
       subtitle: "Large-scale health programs & employee wellness solutions",
       items: [
@@ -59,6 +77,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <PawPrint className="w-6 h-6" />,
       title: "Veterinary Diagnostics",
       subtitle: "Expanding healthcare beyond humans",
       items: [
@@ -68,6 +87,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <TrendingUp className="w-6 h-6" />,
       title: "Healthcare Business Consulting & Growth",
       subtitle: "Turn ideas into profitable healthcare businesses",
       items: [
@@ -80,6 +100,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <Plane className="w-6 h-6" />,
       title: "Medical Tourism",
       subtitle: "End-to-end patient travel & treatment solutions",
       items: [
@@ -90,6 +111,7 @@ export default function Services() {
       ],
     },
     {
+      icon: <Network className="w-6 h-6" />,
       title: "Integrated Healthcare Ecosystem (USP Layer)",
       subtitle: "Your unique positioning — combine everything together",
       items: [
@@ -123,7 +145,7 @@ export default function Services() {
               className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300"
             >
               <div className="w-12 h-12 bg-emerald-50/80 text-emerald-600 rounded-full flex items-center justify-center font-bold text-lg mb-5">
-                {index + 1}
+                {category.icon}
               </div>
               <h2 className="text-xl font-bold text-slate-900 mb-2 leading-tight">
                 {category.title}
@@ -137,7 +159,10 @@ export default function Services() {
                     key={idx}
                     className="flex items-start gap-3 text-slate-500 text-sm font-normal"
                   >
-                    <span className="text-emerald-500 mt-0.5 text-xs">✔</span>
+                    <BadgeCheck
+                      className="w-5 h-5 text-emerald-500 mt-0.5 shrink-0"
+                      strokeWidth={2.5}
+                    />
                     <span className="leading-relaxed">{item}</span>
                   </li>
                 ))}

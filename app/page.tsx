@@ -1,3 +1,39 @@
+import {
+  Eye,
+  Target,
+  HeartHandshake,
+  ShieldCheck,
+  Activity,
+  Users,
+  Sparkles,
+  Stethoscope,
+  BriefcaseMedical,
+  Route,
+  MonitorSmartphone,
+  Layers,
+  SlidersHorizontal,
+  Zap,
+  Cpu,
+  BarChart3,
+  Microscope,
+  Laptop,
+  Tags,
+  Syringe,
+  ClipboardType,
+  Phone,
+  Mail,
+  MapPin,
+  Building2,
+  Hospital,
+  Droplet,
+  FileCheck,
+  ArrowRight,
+  TestTube,
+  PawPrint,
+  Building,
+  LineChart,
+} from "lucide-react";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 overflow-x-hidden w-full">
@@ -48,21 +84,53 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              "All-in-One Healthcare Platform",
-              "Corporate & Diagnostic Expertise",
-              "End-to-End Project Support",
-              "Technology-Driven Solutions",
+              {
+                title: "All-in-One Healthcare Platform",
+                icon: (
+                  <Stethoscope
+                    className="w-6 h-6 md:w-8 md:h-8 text-emerald-500"
+                    strokeWidth={2}
+                  />
+                ),
+              },
+              {
+                title: "Corporate & Diagnostic Expertise",
+                icon: (
+                  <BriefcaseMedical
+                    className="w-6 h-6 md:w-8 md:h-8 text-emerald-500"
+                    strokeWidth={2}
+                  />
+                ),
+              },
+              {
+                title: "End-to-End Project Support",
+                icon: (
+                  <Route
+                    className="w-6 h-6 md:w-8 md:h-8 text-emerald-500"
+                    strokeWidth={2}
+                  />
+                ),
+              },
+              {
+                title: "Technology-Driven Solutions",
+                icon: (
+                  <MonitorSmartphone
+                    className="w-6 h-6 md:w-8 md:h-8 text-emerald-500"
+                    strokeWidth={2}
+                  />
+                ),
+              },
             ].map((highlight, i) => (
               <div
                 key={i}
                 className="bg-white border-t-4 border-t-emerald-500 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center gap-4 relative overflow-hidden group"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center text-xl md:text-2xl font-bold relative z-10 group-hover:scale-110 transition-transform">
-                  ✓
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center relative z-10 group-hover:scale-110 transition-transform">
+                  {highlight.icon}
                 </div>
                 <span className="text-base font-semibold text-slate-800 relative z-10 leading-snug">
-                  {highlight}
+                  {highlight.title}
                 </span>
               </div>
             ))}
@@ -124,8 +192,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 group">
-              <div className="text-emerald-500 text-4xl md:text-5xl mb-6 group-hover:scale-110 transition-transform origin-left">
-                👁️
+              <div className="text-emerald-500 mb-6 group-hover:scale-110 transition-transform origin-left">
+                <Eye className="w-12 h-12" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 Our Vision
@@ -137,8 +205,8 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 group">
-              <div className="text-emerald-500 text-4xl md:text-5xl mb-6 group-hover:scale-110 transition-transform origin-left">
-                🎯
+              <div className="text-emerald-500 mb-6 group-hover:scale-110 transition-transform origin-left">
+                <Target className="w-12 h-12" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 Our Mission
@@ -150,28 +218,40 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 group">
-              <div className="text-emerald-500 text-4xl md:text-5xl mb-6 group-hover:scale-110 transition-transform origin-left">
-                🤝
+              <div className="text-emerald-500 mb-6 group-hover:scale-110 transition-transform origin-left">
+                <HeartHandshake className="w-12 h-12" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 Our Commitment
               </h3>
               <ul className="text-slate-600 text-base space-y-3 font-medium">
-                <li className="flex items-center gap-2">
-                  <span className="text-emerald-500">✔</span> Trusted &
-                  transparent healthcare
+                <li className="flex items-center gap-3">
+                  <ShieldCheck
+                    className="w-5 h-5 text-emerald-500 shrink-0"
+                    strokeWidth={2.5}
+                  />{" "}
+                  Trusted & transparent healthcare
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-emerald-500">✔</span> Early diagnosis &
-                  prevention
+                <li className="flex items-center gap-3">
+                  <Activity
+                    className="w-5 h-5 text-emerald-500 shrink-0"
+                    strokeWidth={2.5}
+                  />{" "}
+                  Early diagnosis & prevention
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-emerald-500">✔</span> Healthier
-                  communities & workplaces
+                <li className="flex items-center gap-3">
+                  <Users
+                    className="w-5 h-5 text-emerald-500 shrink-0"
+                    strokeWidth={2.5}
+                  />{" "}
+                  Healthier communities & workplaces
                 </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-emerald-500">✔</span> Continuous
-                  innovation
+                <li className="flex items-center gap-3">
+                  <Sparkles
+                    className="w-5 h-5 text-emerald-500 shrink-0"
+                    strokeWidth={2.5}
+                  />{" "}
+                  Continuous innovation
                 </li>
               </ul>
             </div>
@@ -197,53 +277,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. WHAT WE DO (OUR SERVICES TOTAL 9) */}
+      {/* 6. WHAT WE DO (OUR SERVICES TOTAL 9 - REPLACED NUMBERS WITH ICONS) */}
       <section className="pb-16 md:pb-24 bg-white w-full border-b border-slate-200">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                num: "1",
+                icon: <Activity className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Preventive & Monitoring Health Packages",
                 desc: "Tailored screening for individuals, corporates, and groups.",
               },
               {
-                num: "2",
+                icon: <TestTube className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Advanced Diagnostics & Testing",
                 desc: "LC-MS/MS and advanced biomarker testing for personalized healthcare.",
               },
               {
-                num: "3",
+                icon: <PawPrint className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Veterinary Diagnostic Services",
                 desc: "Livestock health management & companion animal diagnostics.",
               },
               {
-                num: "4",
+                icon: <Microscope className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Diagnostic Lab Setup & Consulting",
                 desc: "End-to-end support for establishing NABL compliant facilities.",
               },
               {
-                num: "5",
+                icon: <Syringe className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Vaccination & Health Camps",
                 desc: "Corporate, school, and community-focused health initiatives.",
               },
               {
-                num: "6",
+                icon: (
+                  <BriefcaseMedical className="w-5 h-5" strokeWidth={2.5} />
+                ),
                 title: "Occupational Healthcare Services",
                 desc: "Workplace health solutions and industrial health assessments.",
               },
               {
-                num: "7",
+                icon: <Building className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Hospital Planning & Construction",
                 desc: "Infrastructure development, equipment planning & supervision.",
               },
               {
-                num: "8",
+                icon: <FileCheck className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Accreditation & Certification",
                 desc: "Complete support for NABH, NABL, ISO, and fire safety.",
               },
               {
-                num: "9",
+                icon: <LineChart className="w-5 h-5" strokeWidth={2.5} />,
                 title: "Project Reports & Market Research",
                 desc: "Feasibility studies, loans, and market insights for healthcare.",
               },
@@ -254,7 +336,7 @@ export default function Home() {
               >
                 <div className="flex items-center gap-4 mb-3">
                   <span className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center font-bold text-lg group-hover:bg-emerald-500 group-hover:text-white transition-colors">
-                    {srv.num}
+                    {srv.icon}
                   </span>
                   <h4 className="font-bold text-slate-900 text-lg leading-tight">
                     {srv.title}
@@ -329,7 +411,7 @@ export default function Home() {
                     Example Corporate Wellness Dashboard Report
                   </p>
                 </div>
-                <div className="mt-6 md:mt-0 bg-slate-800/80 px-6 py-4 rounded-2xl border border-slate-700 flex gap-8">
+                <div className="mt-6 md:mt-0 bg-slate-800/80 px-5 sm:px-6 py-4 rounded-2xl border border-slate-700 flex flex-wrap sm:flex-nowrap gap-4 sm:gap-8">
                   <div>
                     <p className="text-slate-400 text-xs uppercase tracking-widest font-semibold mb-1">
                       Total Screened
@@ -353,8 +435,10 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
                 <div>
                   <h4 className="text-white font-semibold text-xl mb-6 flex items-center gap-3">
-                    <span className="text-emerald-500 text-2xl">📊</span> Risk
-                    Distribution
+                    <span className="text-emerald-500">
+                      <BarChart3 className="w-6 h-6 inline-block" />
+                    </span>{" "}
+                    Risk Distribution
                   </h4>
                   <div className="space-y-6">
                     {[
@@ -418,8 +502,10 @@ export default function Home() {
 
                 <div>
                   <h4 className="text-white font-semibold text-xl mb-6 flex items-center gap-3">
-                    <span className="text-cyan-500 text-2xl">🔬</span> Key
-                    Health Insights
+                    <span className="text-cyan-500">
+                      <Microscope className="w-6 h-6 inline-block" />
+                    </span>{" "}
+                    Key Health Insights
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {[
@@ -487,7 +573,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. PRO TIP QUOTATION (Updated to sleek card texture) */}
+      {/* 7. PRO TIP QUOTATION */}
       <section className="py-16 md:py-24 bg-slate-50 w-full border-b border-slate-200">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="relative bg-white rounded-3xl p-10 md:p-16 border border-slate-200 shadow-xl shadow-slate-200/40 overflow-hidden w-full flex items-center justify-center">
@@ -536,34 +622,64 @@ export default function Home() {
               {
                 title: "All-in-One Platform",
                 desc: "No need to manage multiple vendors—we handle everything.",
+                icon: (
+                  <Layers
+                    className="w-6 h-6 text-emerald-600"
+                    strokeWidth={2.5}
+                  />
+                ),
               },
               {
                 title: "Affordable Quality",
                 desc: "High-quality services at optimized, cost-effective pricing.",
+                icon: (
+                  <HeartHandshake
+                    className="w-6 h-6 text-emerald-600"
+                    strokeWidth={2.5}
+                  />
+                ),
               },
               {
                 title: "Customized Solutions",
                 desc: "Tailored services for individuals, corporates, and businesses.",
+                icon: (
+                  <SlidersHorizontal
+                    className="w-6 h-6 text-emerald-600"
+                    strokeWidth={2.5}
+                  />
+                ),
               },
               {
                 title: "Fast Execution Team",
                 desc: "Quick turnaround with high accuracy and reliability.",
+                icon: (
+                  <Zap className="w-6 h-6 text-emerald-600" strokeWidth={2.5} />
+                ),
               },
               {
                 title: "Technology-Driven Approach",
                 desc: "Smart tools for monitoring, reporting, and scalability.",
+                icon: (
+                  <Cpu className="w-6 h-6 text-emerald-600" strokeWidth={2.5} />
+                ),
               },
               {
                 title: "Corporate Health Expertise",
                 desc: "Specialized in employee wellness, camps, and compliance.",
+                icon: (
+                  <Building2
+                    className="w-6 h-6 text-emerald-600"
+                    strokeWidth={2.5}
+                  />
+                ),
               },
             ].map((usp, i) => (
               <div
                 key={i}
                 className="bg-slate-50 border border-slate-100 p-8 rounded-3xl text-center hover:shadow-lg hover:border-emerald-200 transition-all duration-300"
               >
-                <div className="w-14 h-14 mx-auto bg-emerald-100/50 rounded-full flex items-center justify-center mb-5 text-emerald-600 text-xl font-bold">
-                  ✔
+                <div className="w-14 h-14 mx-auto bg-emerald-100/50 rounded-full flex items-center justify-center mb-5 text-emerald-600">
+                  {usp.icon}
                 </div>
                 <h4 className="font-bold text-slate-900 text-xl mb-3">
                   {usp.title}
@@ -658,16 +774,33 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
-              { icon: "📱", label: "Book lab tests online" },
-              { icon: "⚖️", label: "Compare prices easily" },
-              { icon: "🏠", label: "Schedule home sample collection" },
-              { icon: "📊", label: "Access reports anytime" },
+              {
+                icon: <Laptop className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
+                label: "Book lab tests online",
+              },
+              {
+                icon: <Tags className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
+                label: "Compare prices easily",
+              },
+              {
+                icon: <Syringe className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
+                label: "Schedule home sample collection",
+              },
+              {
+                icon: (
+                  <ClipboardType
+                    className="w-8 h-8 mx-auto"
+                    strokeWidth={1.5}
+                  />
+                ),
+                label: "Access reports anytime",
+              },
             ].map((feature, i) => (
               <div
                 key={i}
                 className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-3xl text-center w-56 hover:bg-white/10 hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
               >
-                <span className="block text-4xl mb-3 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105">
+                <span className="block mb-4 text-white opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
                   {feature.icon}
                 </span>
                 <span className="text-xs font-semibold text-white/90 uppercase tracking-widest leading-relaxed">
@@ -702,20 +835,20 @@ export default function Home() {
               <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 mb-8 shadow-sm">
                 <ul className="space-y-6">
                   <li className="flex items-center gap-5 text-lg font-medium text-slate-700">
-                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
-                      📞
+                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
+                      <Phone className="w-5 h-5" />
                     </span>
                     +91 73865 14350 / +91 95151 14350
                   </li>
                   <li className="flex items-center gap-5 text-lg font-medium text-slate-700">
-                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
-                      📧
+                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5" />
                     </span>
                     info@infinitemedihealth.com
                   </li>
                   <li className="flex items-start gap-5 text-lg font-medium text-slate-700">
-                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
-                      📍
+                    <span className="w-12 h-12 rounded-full bg-emerald-100/50 text-emerald-600 flex items-center justify-center shrink-0">
+                      <MapPin className="w-5 h-5" />
                     </span>
                     <span className="leading-relaxed text-base mt-1">
                       Plot No-44, 1st floor, Rainbow Meadows, Road no-3, Kista
@@ -733,13 +866,16 @@ export default function Home() {
                 </h3>
                 <div className="flex flex-col gap-4 relative z-10 font-semibold text-xs md:text-sm uppercase tracking-widest text-emerald-400">
                   <span className="flex items-center gap-3 hover:text-white cursor-pointer transition-colors">
-                    <span className="text-lg">👉</span> Book Consultation
+                    <ArrowRight className="w-5 h-5 text-emerald-400" /> Book
+                    Consultation
                   </span>
                   <span className="flex items-center gap-3 hover:text-white cursor-pointer transition-colors">
-                    <span className="text-lg">👉</span> Schedule Health Camp
+                    <ArrowRight className="w-5 h-5 text-emerald-400" /> Schedule
+                    Health Camp
                   </span>
                   <span className="flex items-center gap-3 hover:text-white cursor-pointer transition-colors">
-                    <span className="text-lg">👉</span> Get Project Report
+                    <ArrowRight className="w-5 h-5 text-emerald-400" /> Get
+                    Project Report
                   </span>
                 </div>
               </div>
@@ -845,20 +981,60 @@ export default function Home() {
             <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-6 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
-              { title: "Improve Employee Health", icon: "🏢" },
-              { title: "Start a Diagnostic Lab", icon: "🔬" },
-              { title: "Setup Hospital", icon: "🏥" },
-              { title: "Book Health Tests", icon: "🩸" },
-              { title: "Compliance & Accreditation", icon: "📜" },
+              {
+                title: "Improve Employee Health",
+                icon: (
+                  <Building2
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Start a Diagnostic Lab",
+                icon: (
+                  <Microscope
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Setup Hospital",
+                icon: (
+                  <Hospital
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Book Health Tests",
+                icon: (
+                  <Droplet
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Compliance & Accreditation",
+                icon: (
+                  <FileCheck
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
             ].map((item, idx) => (
               <a
                 href="#contact"
                 key={idx}
                 className="group bg-white p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_15px_30px_-5px_rgba(16,185,129,0.1)] hover:border-emerald-200 text-center cursor-pointer flex flex-col items-center justify-center"
               >
-                <div className="text-5xl mb-5 transform group-hover:scale-105 transition-transform">
+                <div className="mb-5 transform group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
                 <h3 className="text-base font-bold text-slate-900 leading-snug">
