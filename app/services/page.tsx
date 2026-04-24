@@ -124,7 +124,7 @@ export default function Services() {
   ];
 
   return (
-    <main className="min-h-screen bg-slate-50 pt-16 md:pt-20 pb-16 md:pb-20">
+    <main className="min-h-screen bg-slate-50 pt-10 md:pt-14 pb-10 md:pb-14">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-14">
           <h1 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">

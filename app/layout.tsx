@@ -19,7 +19,51 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Infinite Medi Health | Complete Healthcare Solutions",
   description:
-    "End-to-End Healthcare, Compliance, and Infrastructure Solutions through a single integrated platform.",
+    "End-to-End Healthcare, Compliance, and Infrastructure Solutions through a single integrated platform. Setup labs, hospitals, and corporate health camps.",
+  keywords: [
+    "healthcare solutions",
+    "diagnostic lab setup",
+    "hospital compliance",
+    "corporate health camps",
+    "medical infrastructure",
+    "NABH accreditation",
+    "Hyderabad healthcare",
+  ],
+  authors: [{ name: "Infinite Medi Health" }],
+  creator: "Infinite Medi Health",
+  publisher: "Infinite Medi Health",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "https://infinitemedihealth.com",
+  },
+  openGraph: {
+    title: "Infinite Medi Health | Complete Healthcare Solutions",
+    description:
+      "End-to-End Healthcare, Compliance, and Infrastructure Solutions. Build, Manage & Scale Healthcare.",
+    url: "https://infinitemedihealth.com",
+    siteName: "Infinite Medi Health",
+    images: [
+      {
+        url: "https://infinitemedihealth.com/Home%201.jpg", // Make sure this URL is correct
+        width: 1200,
+        height: 630,
+        alt: "Infinite Medi Health Solutions",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Infinite Medi Health | Complete Healthcare Solutions",
+    description:
+      "End-to-End Healthcare, Compliance, and Infrastructure Solutions.",
+    images: ["https://infinitemedihealth.com/Home%201.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -30,10 +74,10 @@ export default function RootLayout({
   const navLinks = [
     { name: "Home", link: "/" },
     { name: "Solutions", link: "/services" },
-    { name: "Start Business", link: "/#high-ticket" },
     { name: "Why Us", link: "/#why-us" },
     { name: "Our Process", link: "/#process" },
-    { name: "Diagnostic Kart", link: "/#diagnostic-kart" },
+    { name: "Start Business", link: "/#high-ticket" },
+    { name: "Diagnostic Kart", link: "https://diagnostickart.com" }, // <--- Updated to external link
   ];
 
   return (

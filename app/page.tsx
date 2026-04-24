@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 overflow-x-hidden w-full">
       {/* 1. HOME (Text -> Full Edge Image -> Buttons) */}
-      <section className="pt-20 pb-12 bg-white relative">
+      <section className="pb-12 bg-white relative">
         <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-slate-100 to-white z-0"></div>
 
         {/* Full-Width Hero Image Container */}
@@ -48,7 +48,7 @@ export default function Home() {
           <img
             src="/Home%201.jpg"
             alt="Complete Healthcare Solutions - From Diagnostics to Infrastructure"
-            className="w-full h-auto max-h-[70vh] object-cover"
+            className="w-full h-auto block"
           />
 
           {/* Action Bar */}
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* 3. ABOUT SNAPSHOT */}
-      <section className="py-12 md:py-16 bg-white w-full">
+      <section className="py-8 md:py-10 bg-white w-full">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="bg-gradient-to-r from-slate-900 to-blue-950 rounded-3xl p-10 md:p-14 text-center shadow-2xl relative overflow-hidden w-full">
             <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px]"></div>
@@ -169,10 +169,10 @@ export default function Home() {
       {/* 4. WHO WE ARE */}
       <section
         id="who-we-are"
-        className="py-16 md:py-20 bg-slate-50 w-full border-b border-slate-200"
+        className="py-10 md:py-12 bg-slate-50 w-full border-b border-slate-200"
       >
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
               Who We Are
             </h2>
@@ -262,7 +262,7 @@ export default function Home() {
       </section>
 
       {/* 5. SERVICES (OVERVIEW) */}
-      <section className="py-16 md:py-20 bg-white w-full">
+      <section className="py-10 md:py-12 bg-white w-full">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
             Comprehensive Healthcare Solutions
@@ -280,7 +280,7 @@ export default function Home() {
       </section>
 
       {/* 6. WHAT WE DO (OUR SERVICES TOTAL 9) */}
-      <section className="pb-16 md:pb-24 bg-white w-full border-b border-slate-200">
+      <section className="pb-10 md:pb-12 bg-white w-full border-b border-slate-200">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -372,9 +372,9 @@ export default function Home() {
       </section>
 
       {/* SUMMARY REPORT */}
-      <section className="py-16 md:py-20 bg-slate-50 w-full border-b border-slate-200">
+      <section className="py-10 md:py-12 bg-slate-50 w-full border-b border-slate-200">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-slate-200 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-slate-200 mb-10">
             {[
               { num: "1,000+", label: "Health Screenings" },
               { num: "50+", label: "Corporate Camps" },
@@ -576,7 +576,7 @@ export default function Home() {
       </section>
 
       {/* 7. PRO TIP QUOTATION */}
-      <section className="py-16 md:py-24 bg-slate-50 w-full border-b border-slate-200">
+      <section className="py-10 md:py-14 bg-slate-50 w-full border-b border-slate-200">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
           <div className="relative bg-white rounded-3xl p-10 md:p-16 border border-slate-200 shadow-xl shadow-slate-200/40 overflow-hidden w-full flex items-center justify-center">
             {/* Pure CSS Dot Texture */}
@@ -610,10 +610,10 @@ export default function Home() {
       {/* 8. WHY CHOOSE US */}
       <section
         id="why-us"
-        className="py-16 md:py-20 bg-white w-full border-b border-slate-200"
+        className="py-10 md:py-12 bg-white w-full border-b border-slate-200"
       >
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
               Why Choose Infinite Medi Health
             </h2>
@@ -698,10 +698,10 @@ export default function Home() {
       {/* 9. OUR PROCESS */}
       <section
         id="process"
-        className="py-16 md:py-20 bg-slate-50 w-full border-b border-slate-200"
+        className="py-10 md:py-12 bg-slate-50 w-full border-b border-slate-200"
       >
         <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-14 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8 md:mb-10">
             Our End-to-End Healthcare Process
           </h2>
 
@@ -754,78 +754,129 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 10. DIAGNOSTIC KART */}
+      {/* 10. WHAT ARE YOU LOOKING FOR (SMART ENTRY) */}
       <section
-        id="diagnostic-kart"
-        className="py-20 md:py-28 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center relative bg-fixed w-full"
+        id="smart-entry"
+        className="py-10 md:py-12 bg-slate-50 w-full relative"
       >
-        <div className="absolute inset-0 bg-slate-900/90 backdrop-blur-sm"></div>
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-          {/* RESPONSIVE ALIGNMENT FIX FOR "COMING SOON" */}
-          <div className="flex justify-center mb-6 w-full">
-            <div className="relative inline-flex items-center justify-center max-w-full">
-              <span className="absolute inset-0 bg-cyan-400 blur-md opacity-30 rounded-full"></span>
-              <span className="relative bg-slate-900 border border-cyan-500/30 text-cyan-400 px-5 py-2 sm:px-6 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-center shadow-[0_0_15px_rgba(34,211,238,0.2)]">
-                Coming Soon – Smart Diagnostic Platform
-              </span>
-            </div>
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
+              What Are You Looking For?
+            </h2>
+            <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-6 rounded-full"></div>
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-md">
-            Diagnostic <span className="font-light text-cyan-400">Kart</span>
-          </h2>
-          <p className="text-lg md:text-xl text-slate-300 max-w-5xl mx-auto mb-10 font-light leading-relaxed">
-            A digital platform designed to simplify diagnostics.
-            <br />
-            Goal: Make Diagnostics Fast, Transparent, and Accessible.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
               {
-                icon: <Laptop className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
-                label: "Book Lab Tests Online",
-              },
-              {
-                icon: <Tags className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
-                label: "Compare Prices Easily",
-              },
-              {
-                icon: <Syringe className="w-8 h-8 mx-auto" strokeWidth={1.5} />,
-                label: "Schedule Home Sample Collection",
-              },
-              {
+                title: "Improve Employee Health",
                 icon: (
-                  <ClipboardType
-                    className="w-8 h-8 mx-auto"
+                  <Building2
+                    className="w-10 h-10 mx-auto text-emerald-500"
                     strokeWidth={1.5}
                   />
                 ),
-                label: "Access Reports Anytime",
               },
-            ].map((feature, i) => (
-              <div
-                key={i}
-                className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-3xl text-center w-56 hover:bg-white/10 hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+              {
+                title: "Start A Diagnostic Lab",
+                icon: (
+                  <Microscope
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Setup Hospital",
+                icon: (
+                  <Hospital
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Book Health Tests",
+                icon: (
+                  <Droplet
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+              {
+                title: "Compliance & Accreditation",
+                icon: (
+                  <FileCheck
+                    className="w-10 h-10 mx-auto text-emerald-500"
+                    strokeWidth={1.5}
+                  />
+                ),
+              },
+            ].map((item, idx) => (
+              <a
+                href="#contact"
+                key={idx}
+                className="group bg-white p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_15px_30px_-5px_rgba(16,185,129,0.1)] hover:border-emerald-200 text-center cursor-pointer flex flex-col items-center justify-center"
               >
-                <span className="block mb-4 text-white opacity-80 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
-                  {feature.icon}
-                </span>
-                <span className="text-xs font-semibold text-white/90 uppercase tracking-widest leading-relaxed">
-                  {feature.label}
-                </span>
-              </div>
+                <div className="mb-5 transform group-hover:scale-110 transition-transform">
+                  {item.icon}
+                </div>
+                <h3 className="text-base font-bold text-slate-900 leading-snug">
+                  {item.title}
+                </h3>
+              </a>
             ))}
           </div>
-          <a
-            href="#contact"
-            className="inline-block px-10 py-4 bg-cyan-500 text-slate-900 rounded-full font-semibold text-sm uppercase tracking-widest hover:bg-cyan-400 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:-translate-y-0.5"
-          >
-            Join Early Access / Get Notified
-          </a>
         </div>
       </section>
 
-      {/* 11, 12, 13. CONTACT, ENQUIRY FORM, & CALL TO ACTION */}
+      {/* 11. START YOUR LAB (HIGH-TICKET OFFER) */}
+      <section
+        id="high-ticket"
+        className="py-10 md:py-14 bg-slate-900 text-white w-full relative overflow-hidden"
+      >
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] animate-pulse"></div>
+        <div
+          className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div className="lg:w-2/3 text-center lg:text-left">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight tracking-tight">
+              Start Your Lab / Hospital in{" "}
+              <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                30–90 Days.
+              </span>
+            </h2>
+            <ul className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 text-xs sm:text-sm md:text-base font-semibold mb-10">
+              {["Project Report", "Setup", "Compliance", "Operations"].map(
+                (tag, i) => (
+                  <li
+                    key={i}
+                    className="bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 px-3 sm:px-6 py-2.5 rounded-xl sm:rounded-full flex items-center justify-center sm:justify-start gap-2 sm:gap-3 shadow-sm text-slate-200"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)] shrink-0"></span>{" "}
+                    <span className="whitespace-nowrap">{tag}</span>
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
+          <div className="lg:w-1/3 w-full flex justify-center lg:justify-end">
+            <a
+              href="#contact"
+              className="w-full sm:w-auto px-10 py-5 bg-emerald-500 text-slate-900 rounded-full font-bold text-lg uppercase tracking-widest hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.3)] text-center whitespace-nowrap"
+            >
+              Get Detailed Plan
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 12, 13, 14. CONTACT, ENQUIRY FORM, & CALL TO ACTION */}
       <section
         id="contact"
         className="py-16 md:py-20 bg-white w-full border-b border-slate-200"
@@ -1013,128 +1064,6 @@ export default function Home() {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 14. WHAT ARE YOU LOOKING FOR (SMART ENTRY) */}
-      <section
-        id="smart-entry"
-        className="py-16 md:py-20 bg-slate-50 w-full relative"
-      >
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">
-              What Are You Looking For?
-            </h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-6 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
-            {[
-              {
-                title: "Improve Employee Health",
-                icon: (
-                  <Building2
-                    className="w-10 h-10 mx-auto text-emerald-500"
-                    strokeWidth={1.5}
-                  />
-                ),
-              },
-              {
-                title: "Start A Diagnostic Lab",
-                icon: (
-                  <Microscope
-                    className="w-10 h-10 mx-auto text-emerald-500"
-                    strokeWidth={1.5}
-                  />
-                ),
-              },
-              {
-                title: "Setup Hospital",
-                icon: (
-                  <Hospital
-                    className="w-10 h-10 mx-auto text-emerald-500"
-                    strokeWidth={1.5}
-                  />
-                ),
-              },
-              {
-                title: "Book Health Tests",
-                icon: (
-                  <Droplet
-                    className="w-10 h-10 mx-auto text-emerald-500"
-                    strokeWidth={1.5}
-                  />
-                ),
-              },
-              {
-                title: "Compliance & Accreditation",
-                icon: (
-                  <FileCheck
-                    className="w-10 h-10 mx-auto text-emerald-500"
-                    strokeWidth={1.5}
-                  />
-                ),
-              },
-            ].map((item, idx) => (
-              <a
-                href="#contact"
-                key={idx}
-                className="group bg-white p-8 rounded-3xl border border-slate-100 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_15px_30px_-5px_rgba(16,185,129,0.1)] hover:border-emerald-200 text-center cursor-pointer flex flex-col items-center justify-center"
-              >
-                <div className="mb-5 transform group-hover:scale-110 transition-transform">
-                  {item.icon}
-                </div>
-                <h3 className="text-base font-bold text-slate-900 leading-snug">
-                  {item.title}
-                </h3>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 15. START YOUR LAB (HIGH-TICKET OFFER) */}
-      <section
-        id="high-ticket"
-        className="py-16 md:py-24 bg-slate-900 text-white w-full relative overflow-hidden"
-      >
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] animate-pulse"></div>
-        <div
-          className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className="lg:w-2/3 text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight tracking-tight">
-              Start Your Lab / Hospital in{" "}
-              <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
-                30–90 Days.
-              </span>
-            </h2>
-            <ul className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 text-xs sm:text-sm md:text-base font-semibold mb-10">
-              {["Project Report", "Setup", "Compliance", "Operations"].map(
-                (tag, i) => (
-                  <li
-                    key={i}
-                    className="bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 px-3 sm:px-6 py-2.5 rounded-xl sm:rounded-full flex items-center justify-center sm:justify-start gap-2 sm:gap-3 shadow-sm text-slate-200"
-                  >
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.6)] shrink-0"></span>{" "}
-                    <span className="whitespace-nowrap">{tag}</span>
-                  </li>
-                ),
-              )}
-            </ul>
-          </div>
-          <div className="lg:w-1/3 w-full flex justify-center lg:justify-end">
-            <a
-              href="#contact"
-              className="w-full sm:w-auto px-10 py-5 bg-emerald-500 text-slate-900 rounded-full font-bold text-lg uppercase tracking-widest hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_30px_rgba(16,185,129,0.3)] text-center whitespace-nowrap"
-            >
-              Get Detailed Plan
-            </a>
           </div>
         </div>
       </section>
