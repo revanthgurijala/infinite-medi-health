@@ -113,7 +113,7 @@ export default function Services() {
     {
       icon: <Network className="w-6 h-6" />,
       title: "Integrated Healthcare Ecosystem (USP Layer)",
-      subtitle: "Your Unique Positioning — Combine Everything Together",
+      subtitle: "Our Unique Positioning — Combine Everything Together",
       items: [
         "End-to-End Healthcare Solutions (Setup → Compliance → Operations → Revenue)",
         "Integrated Digital + Diagnostic + Consulting Model",
