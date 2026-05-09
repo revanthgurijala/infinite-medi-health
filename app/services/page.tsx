@@ -54,13 +54,16 @@ export default function Services() {
     },
     {
       icon: <HeartPulse className="w-6 h-6" />,
-      title: "Preventive Healthcare & Wellness",
+      title: "Healthcare Brand Activation Services",
       subtitle: "Proactive Health Management For Individuals & Organizations",
       items: [
-        "Preventive Health Checkup Packages",
-        "Chronic Disease Monitoring Programs",
-        "High-Risk Patient Screening Programs",
-        "Personalized Health Packages",
+        "Multi-Specialty Hospitals",
+        "Diagnostic Laboratory Chains",
+        "Pharmacy Networks",
+        "Clinics & Wellness Centers",
+        "Preventive Healthcare Brands",
+        "Home Healthcare Service Providers",
+        "Healthcare Startups & Medical Brands",
       ],
     },
     {
@@ -139,36 +142,66 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {categories.map((category, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300"
-            >
-              <div className="w-12 h-12 bg-emerald-50/80 text-emerald-600 rounded-full flex items-center justify-center font-bold text-lg mb-5">
-                {category.icon}
+          {categories.map((category, index) => {
+            // Check if this is the 4th card (Index 3)
+            const isClickableCard = index === 3;
+
+            const CardContent = (
+              <div
+                className={`bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300 h-full ${
+                  isClickableCard
+                    ? "cursor-pointer ring-2 ring-transparent hover:ring-emerald-400"
+                    : ""
+                }`}
+              >
+                <div className="w-12 h-12 bg-emerald-50/80 text-emerald-600 rounded-full flex items-center justify-center font-bold text-lg mb-5">
+                  {category.icon}
+                </div>
+                <h2 className="text-xl font-bold text-slate-900 mb-2 leading-tight">
+                  {category.title}
+                </h2>
+                <p className="text-xs font-semibold text-emerald-600 mb-5 pb-4 border-b border-slate-100 uppercase tracking-widest leading-relaxed">
+                  {category.subtitle}
+                </p>
+                <ul className="space-y-3">
+                  {category.items.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 text-slate-500 text-sm font-normal"
+                    >
+                      <BadgeCheck
+                        className="w-5 h-5 text-emerald-500 mt-0.5 shrink-0"
+                        strokeWidth={2.5}
+                      />
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Add a subtle "Click to Read More" prompt just for this card */}
+                {isClickableCard && (
+                  <div className="mt-6 pt-4 border-t border-slate-100 text-emerald-500 text-sm font-bold flex items-center gap-2">
+                    Explore Full Details &rarr;
+                  </div>
+                )}
               </div>
-              <h2 className="text-xl font-bold text-slate-900 mb-2 leading-tight">
-                {category.title}
-              </h2>
-              <p className="text-xs font-semibold text-emerald-600 mb-5 pb-4 border-b border-slate-100 uppercase tracking-widest leading-relaxed">
-                {category.subtitle}
-              </p>
-              <ul className="space-y-3">
-                {category.items.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start gap-3 text-slate-500 text-sm font-normal"
-                  >
-                    <BadgeCheck
-                      className="w-5 h-5 text-emerald-500 mt-0.5 shrink-0"
-                      strokeWidth={2.5}
-                    />
-                    <span className="leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            );
+
+            // If it's the 4th card, wrap it in a link. Otherwise, render normally.
+            return isClickableCard ? (
+              <a
+                key={index}
+                href="/services/healthcare-brand"
+                className="block h-full"
+              >
+                {CardContent}
+              </a>
+            ) : (
+              <div key={index} className="h-full">
+                {CardContent}
+              </div>
+            );
+          })}
         </div>
 
         <div className="mt-14 text-center">
